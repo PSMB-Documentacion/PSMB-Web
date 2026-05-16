@@ -7,7 +7,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <title>PSMB 0.0 - Local Mockup</title>
 
 <link rel="shortcut icon" href="SMPS.png">
@@ -154,70 +153,95 @@
     }
 
     /* ========================================================================= */
-    /* RESPONSIVE */
+    /* RESPONSIVE PARA CELULARES */
     /* ========================================================================= */
 
     @media screen and (max-width: 768px) {
+
+        /* =============================== */
+        /* MENU RESPONSIVE MEJORADO */
+        /* =============================== */
 
         .pagenav {
             position: relative;
             width: 100%;
             height: auto;
             box-shadow: none;
+            padding-bottom: 10px;
         }
 
         .sidebarlogo {
-            max-width: 180px;
-            padding: 10px 0;
+            max-width: 170px;
+            padding: 15px 0 10px 0;
         }
 
         .pagenav ul {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px;
         }
 
         .pagenav li {
-            flex: 1 1 45%;
+            width: 100%;
         }
 
         .pagenav a {
             text-align: center;
-            font-size: 13px;
-            padding: 10px;
+            font-size: 14px;
+            padding: 14px 10px;
+            border: 1px solid #d5d5d5;
+            border-radius: 10px;
+            background-color: #f7f7f7;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
+
+        .pagenav a:hover {
+            background-color: #ddd;
+            color: #3e4d6d;
+            transform: scale(1.02);
+        }
+
+        /* =============================== */
+        /* CONTENIDO */
+        /* =============================== */
 
         .main {
             margin-left: 0;
-            padding: 15px;
+            padding: 18px;
         }
 
         .site-footer {
             margin-left: 0;
-            padding: 15px;
+            padding: 18px;
         }
 
         .main h1 {
-            font-size: 1.7rem;
+            font-size: 1.8rem;
+            line-height: 1.3;
         }
 
         .main h2 {
-            font-size: 1.3rem;
+            font-size: 1.35rem;
+            line-height: 1.3;
         }
 
         p {
-            font-size: 0.95rem;
-            line-height: 1.6;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        figure img {
+            border-radius: 10px;
         }
     }
 
 </style>
 
-
 </head>
 
 <body>
-
 
 <!-- BARRA LATERAL -->
 
@@ -244,12 +268,11 @@
 
     <p>
         <strong>Physics of the Standard Model and Beyond (PSMB)</strong>
-        es un software educativo para modelar el comportamiento físico
-        de partículas elementales en el marco del Modelo Estándar y sus extensiones,
-        destinado a automatizar el cálculo simbólico y numérico de las ecuaciones del
-        modelo de Pati-Salam, permitiendo al usuario explorar interactivamente su espacio
-        paramétrico, visualizar las etapas de ruptura de simetría y contrastar sus predicciones
-        con resultados experimentales disponibles.
+        es un software educativo para modelar el comportamiento físico de partículas
+        elementales en el marco del Modelo Estándar y sus extensiones, destinado a automatizar
+        el cálculo simbólico y numérico de las ecuaciones del modelo de Pati-Salam, permitiendo
+        al usuario explorar interactivamente su espacio paramétrico, visualizar las etapas de ruptura
+        de simetría y contrastar sus predicciones con resultados experimentales disponibles.
     </p>
 
     <figure class="figure-collapsible">
@@ -258,16 +281,16 @@
     </figure>
 
     <p>
-        <strong>PSMB</strong> permite a los estudiantes trascender el cálculo manual y centrarse
-        en la física detrás del Modelo Estándar y sus extensiones. El uso de software especializado en
-        física del Modelo Estándar (SM) y Más Allá del Modelo Estándar (BSM) tiene un impacto profundo
-        en la educación científica y la formación de futuros físicos teóricos y experimentales.
+        <strong>PSMB</strong> permite a los estudiantes trascender el cálculo manual y centrarse en la física
+        detrás del Modelo Estándar y sus extensiones. El uso de software especializado en física del Modelo Estándar (SM)
+        y Más Allá del Modelo Estándar (BSM) tiene un impacto profundo en la educación científica y la formación de futuros
+        físicos teóricos y experimentales.
     </p>
 
     <p>
-        <strong>PSMB</strong> representa una innovación educativa que integra la teoría de partículas
-        elementales con las tecnologías de simulación y cálculo simbólico, fortaleciendo el aprendizaje,
-        la capacidad analítica y la formación científica de los estudiantes de física contemporánea.
+        <strong>PSMB</strong> representa una innovación educativa que integra la teoría de partículas elementales con las
+        tecnologías de simulación y cálculo simbólico, fortaleciendo el aprendizaje, la capacidad analítica y la formación
+        científica de los estudiantes de física contemporánea.
     </p>
 
     <hr>

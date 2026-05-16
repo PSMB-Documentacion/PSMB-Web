@@ -1,407 +1,406 @@
-```html
 <!doctype html>
+
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PSMB 0.0 - Local Mockup</title>
+```
+<title>PSMB 0.0 - Local Mockup</title>
 
-    <link rel="shortcut icon" href="SMPS.png">
+<link rel="shortcut icon" href="SMPS.png">
 
-    <style>
+<style>
 
-        /* ========================================================================= */
-        /* ESTILOS GLOBALES */
-        /* ========================================================================= */
+    /* ========================================================================= */
+    /* ESTILOS GLOBALES */
+    /* ========================================================================= */
 
-        html{
-            scroll-behavior:smooth;
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+        overflow-x: hidden;
+    }
+
+    /* ========================================================================= */
+    /* BARRA LATERAL */
+    /* ========================================================================= */
+
+    .pagenav {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #f0f0f0;
+        overflow-y: auto;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .sidebarlogo {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .pagenav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pagenav a {
+        display: block;
+        padding: 12px 15px;
+        text-decoration: none;
+        color: #000;
+        border-bottom: 1px solid #ccc;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .pagenav a:hover {
+        background-color: #ddd;
+        color: #3e4d6d;
+        text-decoration: underline;
+    }
+
+    /* ========================================================================= */
+    /* CONTENIDO PRINCIPAL */
+    /* ========================================================================= */
+
+    .main {
+        margin-left: 270px;
+        padding: 20px 30px;
+        background-color: white;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .main h1,
+    .main h2 {
+        color: #000;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    /* ========================================================================= */
+    /* FIGURAS */
+    /* ========================================================================= */
+
+    figure {
+        border: none;
+        padding: 0;
+        margin: 20px 0;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        max-width: 1000px;
+        filter: grayscale(100%);
+        opacity: 0.7;
+        border: none;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    figcaption {
+        margin-top: 5px;
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    /* ========================================================================= */
+    /* FOOTER */
+    /* ========================================================================= */
+
+    .site-footer {
+        background-color: #f0f0f0;
+        color: #555;
+        text-align: center;
+        padding: 15px 10px;
+        font-size: 0.85em;
+        margin-left: 270px;
+        border-top: 1px solid #ddd;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .site-footer a {
+        color: #3e4d6d;
+        text-decoration: none;
+        margin: 0 8px;
+        word-break: break-word;
+    }
+
+    .site-footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* ========================================================================= */
+    /* RESPONSIVE */
+    /* ========================================================================= */
+
+    @media screen and (max-width: 768px) {
+
+        .pagenav {
+            position: relative;
+            width: 100%;
+            height: auto;
+            box-shadow: none;
         }
 
-        body{
-            font-family:sans-serif;
-            margin:0;
-            padding:0;
-            background-color:#f0f0f0;
-            color:#333;
-            overflow-x:hidden;
+        .sidebarlogo {
+            max-width: 180px;
+            padding: 10px 0;
         }
 
-        /* ========================================================================= */
-        /* BARRA LATERAL */
-        /* ========================================================================= */
-
-        .pagenav{
-            width:250px;
-            position:fixed;
-            top:0;
-            left:0;
-            height:100%;
-            background-color:#f0f0f0;
-            overflow-y:auto;
-            box-shadow:2px 0 5px rgba(0,0,0,0.1);
-            z-index:1000;
+        .pagenav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .sidebarlogo{
-            display:block;
-            width:100%;
-            max-width:250px;
-            height:auto;
-            margin:0 auto;
+        .pagenav li {
+            flex: 1 1 45%;
         }
 
-        .pagenav ul{
-            list-style:none;
-            padding:0;
-            margin:0;
+        .pagenav a {
+            text-align: center;
+            font-size: 13px;
+            padding: 10px;
         }
 
-        .pagenav a{
-            display:block;
-            padding:12px 15px;
-            text-decoration:none;
-            color:#000;
-            border-bottom:1px solid #ccc;
-            font-size:14px;
-            transition:0.3s;
+        .main {
+            margin-left: 0;
+            padding: 15px;
         }
 
-        .pagenav a:hover{
-            background-color:#ddd;
-            color:#3e4d6d;
-            text-decoration:underline;
+        .site-footer {
+            margin-left: 0;
+            padding: 15px;
         }
 
-        /* ========================================================================= */
-        /* CONTENIDO PRINCIPAL */
-        /* ========================================================================= */
-
-        .main{
-            margin-left:270px;
-            padding:20px 30px;
-            background-color:white;
-            min-height:100vh;
-            box-sizing:border-box;
+        .main h1 {
+            font-size: 1.7rem;
         }
 
-        .main h1,
-        .main h2{
-            color:#000;
-            border-bottom:2px solid #ddd;
-            padding-bottom:5px;
+        .main h2 {
+            font-size: 1.3rem;
         }
 
-        /* ========================================================================= */
-        /* FIGURAS */
-        /* ========================================================================= */
-
-        figure{
-            border:none;
-            padding:0;
-            margin:20px 0;
-            text-align:center;
-            background-color:transparent;
+        p {
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
+    }
 
-        figure img{
-            width:100%;
-            height:auto;
-            max-width:1000px;
-            filter:grayscale(100%);
-            opacity:0.7;
-            border:none;
-            display:block;
-            margin:0 auto;
-            border-radius:8px;
-            transition:0.3s;
-        }
+</style>
+```
 
-        figcaption{
-            margin-top:5px;
-            font-size:0.9em;
-            color:#666;
-        }
-
-        /* ========================================================================= */
-        /* FOOTER */
-        /* ========================================================================= */
-
-        .site-footer{
-            background-color:#f0f0f0;
-            color:#555;
-            text-align:center;
-            padding:15px 10px;
-            font-size:0.85em;
-            margin-left:270px;
-            border-top:1px solid #ddd;
-            box-shadow:0 -2px 5px rgba(0,0,0,0.05);
-        }
-
-        .site-footer a{
-            color:#3e4d6d;
-            text-decoration:none;
-            margin:0 8px;
-            word-break:break-word;
-        }
-
-        .site-footer a:hover{
-            text-decoration:underline;
-        }
-
-        /* ========================================================================= */
-        /* RESPONSIVE */
-        /* ========================================================================= */
-
-        @media screen and (max-width:768px){
-
-            .pagenav{
-                position:relative;
-                width:100%;
-                height:auto;
-                box-shadow:none;
-            }
-
-            .sidebarlogo{
-                max-width:180px;
-                padding:10px 0;
-            }
-
-            .pagenav ul{
-                display:flex;
-                flex-wrap:wrap;
-                justify-content:center;
-            }
-
-            .pagenav li{
-                flex:1 1 45%;
-            }
-
-            .pagenav a{
-                text-align:center;
-                font-size:13px;
-                padding:10px;
-            }
-
-            .main{
-                margin-left:0;
-                padding:15px;
-            }
-
-            .site-footer{
-                margin-left:0;
-                padding:15px;
-            }
-
-            .main h1{
-                font-size:1.7rem;
-            }
-
-            .main h2{
-                font-size:1.3rem;
-            }
-
-            p{
-                font-size:0.95rem;
-                line-height:1.6;
-            }
-        }
-
-    </style>
 </head>
 
 <body>
 
-    <!-- BARRA LATERAL -->
+```
+<!-- BARRA LATERAL -->
 
-    <div class="pagenav">
+<div class="pagenav">
 
-        <img src="logo.png" alt="PSMB logo" class="sidebarlogo">
+    <img src="logo.png" alt="PSMB logo" class="sidebarlogo">
 
-        <ul>
-            <li><a href="#seccion-bienvenida">Inicio / Bienvenida</a></li>
-            <li><a href="#seccion-VEV">Valor esperado en vacío (VEV)</a></li>
-            <li><a href="#seccion-ML">Masa de leptoquarks (ML)</a></li>
-            <li><a href="#seccion-ERS">Escala de ruptura de simetría (ERS)</a></li>
-            <li><a href="#seccion-MN">Masa de neutrinos (MN)</a></li>
-            <li><a href="#seccion-MBV">Masa de bosones vectoriales (MBV)</a></li>
-        </ul>
+    <ul>
+        <li><a href="#seccion-bienvenida">Inicio / Bienvenida</a></li>
+        <li><a href="#seccion-VEV">Valor esperado en vacío (VEV)</a></li>
+        <li><a href="#seccion-ML">Masa de leptoquarks (ML)</a></li>
+        <li><a href="#seccion-ERS">Escala de ruptura de simetría (ERS)</a></li>
+        <li><a href="#seccion-MN">Masa de neutrinos (MN)</a></li>
+        <li><a href="#seccion-MBV">Masa de bosones vectoriales (MBV)</a></li>
+    </ul>
 
-    </div>
+</div>
 
-    <!-- CONTENIDO PRINCIPAL -->
+<!-- CONTENIDO PRINCIPAL -->
 
-    <div class="main">
+<div class="main">
 
-        <h1 id="seccion-bienvenida">Bienvenid@s a PSMB</h1>
+    <h1 id="seccion-bienvenida">Bienvenid@s a PSMB</h1>
 
-        <p>
-            <strong>Physics of the Standard Model and Beyond (PSMB)</strong>
-            es un software educativo para modelar el comportamiento físico
-            de partículas elementales en el marco del Modelo Estándar y sus
-            extensiones.
-        </p>
+    <p>
+        <strong>Physics of the Standard Model and Beyond (PSMB)</strong>
+        es un software educativo para modelar el comportamiento físico
+        de partículas elementales en el marco del Modelo Estándar y sus
+        extensiones.
+    </p>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen0.png" alt="Inicio por defecto">
-            <figcaption>Figura 1: Vista principal por defecto.</figcaption>
-        </figure>
+    <figure class="figure-collapsible">
+        <img src="Imagen0.png" alt="Inicio por defecto">
+        <figcaption>Figura 1: Vista principal por defecto.</figcaption>
+    </figure>
 
-        <p>
-            <strong>PSMB</strong> permite a los estudiantes trascender el
-            cálculo manual y centrarse en la física detrás del Modelo Estándar.
-        </p>
+    <p>
+        <strong>PSMB</strong> permite a los estudiantes trascender el
+        cálculo manual y centrarse en la física detrás del Modelo Estándar.
+    </p>
 
-        <hr>
+    <hr>
 
-        <!-- VEV -->
+    <h2 id="seccion-VEV">Valor esperado en vacío (VEV)</h2>
 
-        <h2 id="seccion-VEV">Valor esperado en vacío (VEV)</h2>
+    <p><strong>Párrafo 1:</strong> Explica la versión actual del módulo.</p>
 
-        <p><strong>Párrafo 1:</strong> Explica la versión actual del módulo.</p>
+    <figure class="figure-collapsible">
+        <img src="Imagen1.png" alt="Valor esperado en vacío">
+        <figcaption>Figura 2: Valor esperado en vacío.</figcaption>
+    </figure>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen1.png" alt="Valor esperado en vacío">
-            <figcaption>Figura 2: Valor esperado en vacío.</figcaption>
-        </figure>
+    <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el módulo.</p>
 
-        <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el módulo.</p>
+    <figure class="figure-collapsible">
+        <img src="Imagen2.png" alt="Valor esperado en vacío">
+        <figcaption>Figura 3: Valor esperado en vacío.</figcaption>
+    </figure>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen2.png" alt="Valor esperado en vacío">
-            <figcaption>Figura 3: Valor esperado en vacío.</figcaption>
-        </figure>
+    <hr>
 
-        <hr>
+    <h2 id="seccion-ML">Masa de leptoquarks (ML)</h2>
 
-        <!-- ML -->
+    <p><strong>Párrafo 1:</strong> Señala dónde se encuentra el módulo.</p>
 
-        <h2 id="seccion-ML">Masa de leptoquarks (ML)</h2>
+    <figure class="figure-collapsible">
+        <img src="Imagen3.png" alt="Masa de leptoquarks">
+        <figcaption>Figura 4: Masa de leptoquarks.</figcaption>
+    </figure>
 
-        <p><strong>Párrafo 1:</strong> Señala dónde se encuentra el módulo.</p>
+    <figure class="figure-collapsible">
+        <img src="Imagen4.png" alt="Masa de leptoquarks">
+        <figcaption>Figura 5: Masa de leptoquarks.</figcaption>
+    </figure>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen3.png" alt="Masa de leptoquarks">
-            <figcaption>Figura 4: Masa de leptoquarks.</figcaption>
-        </figure>
+    <hr>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen4.png" alt="Masa de leptoquarks">
-            <figcaption>Figura 5: Masa de leptoquarks.</figcaption>
-        </figure>
+    <h2 id="seccion-ERS">Escala de ruptura de simetría (ERS)</h2>
 
-        <hr>
+    <figure class="figure-collapsible">
+        <img src="Imagen5.png" alt="Escala de ruptura de simetría">
+        <figcaption>Figura 6: Escala de ruptura de simetría.</figcaption>
+    </figure>
 
-        <!-- ERS -->
+    <figure class="figure-collapsible">
+        <img src="Imagen6.png" alt="Escala de ruptura de simetría">
+        <figcaption>Figura 7: Escala de ruptura de simetría.</figcaption>
+    </figure>
 
-        <h2 id="seccion-ERS">Escala de ruptura de simetría (ERS)</h2>
+    <hr>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen5.png" alt="Escala de ruptura de simetría">
-            <figcaption>Figura 6: Escala de ruptura de simetría.</figcaption>
-        </figure>
+    <h2 id="seccion-MN">Masa de neutrinos (MN)</h2>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen6.png" alt="Escala de ruptura de simetría">
-            <figcaption>Figura 7: Escala de ruptura de simetría.</figcaption>
-        </figure>
+    <figure class="figure-collapsible">
+        <img src="Imagen7.png" alt="Masa de neutrinos">
+        <figcaption>Figura 8: Masa de neutrinos.</figcaption>
+    </figure>
 
-        <hr>
+    <hr>
 
-        <!-- MN -->
+    <h2 id="seccion-MBV">Masa de bosones vectoriales (MBV)</h2>
 
-        <h2 id="seccion-MN">Masa de neutrinos (MN)</h2>
+    <figure class="figure-collapsible">
+        <img src="Imagen8.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 9: Masa de bosones vectoriales.</figcaption>
+    </figure>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen7.png" alt="Masa de neutrinos">
-            <figcaption>Figura 8: Masa de neutrinos.</figcaption>
-        </figure>
+    <figure class="figure-collapsible">
+        <img src="Imagen9.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 10: Masa de bosones vectoriales.</figcaption>
+    </figure>
 
-        <hr>
+    <figure class="figure-collapsible">
+        <img src="Imagen10.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 11: Masa de bosones vectoriales.</figcaption>
+    </figure>
 
-        <!-- MBV -->
+    <figure class="figure-collapsible">
+        <img src="Imagen11.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 12: Masa de bosones vectoriales.</figcaption>
+    </figure>
 
-        <h2 id="seccion-MBV">Masa de bosones vectoriales (MBV)</h2>
+</div>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen8.png" alt="Masa de bosones vectoriales">
-            <figcaption>Figura 9: Masa de bosones vectoriales.</figcaption>
-        </figure>
+<!-- FOOTER -->
 
-        <figure class="figure-collapsible">
-            <img src="Imagen9.png" alt="Masa de bosones vectoriales">
-            <figcaption>Figura 10: Masa de bosones vectoriales.</figcaption>
-        </figure>
+<footer class="site-footer">
 
-        <figure class="figure-collapsible">
-            <img src="Imagen10.png" alt="Masa de bosones vectoriales">
-            <figcaption>Figura 11: Masa de bosones vectoriales.</figcaption>
-        </figure>
+    <p>
+        &copy; 2026 PSMB. Todos los Derechos Reservados.
+    </p>
 
-        <figure class="figure-collapsible">
-            <img src="Imagen11.png" alt="Masa de bosones vectoriales">
-            <figcaption>Figura 12: Masa de bosones vectoriales.</figcaption>
-        </figure>
+    <p>
 
-    </div>
+        <a href="mailto:al2213800547@azc.uam.mx">
+            al2213800547@azc.uam.mx
+        </a>
 
-    <!-- FOOTER -->
+        |
 
-    <footer class="site-footer">
+        <a href="mailto:dagarciar@ipn.mx">
+            dagarciar@ipn.mx
+        </a>
 
-        <p>
-            &copy; 2026 PSMB. Todos los Derechos Reservados.
-        </p>
+        |
 
-        <p>
+        <a href="mailto:ahernandez@ipn.mx">
+            ahernandez@ipn.mx
+        </a>
 
-            <a href="mailto:al2213800547@azc.uam.mx">
-                al2213800547@azc.uam.mx
-            </a>
+    </p>
 
-            |
+</footer>
 
-            <a href="mailto:dagarciar@ipn.mx">
-                dagarciar@ipn.mx
-            </a>
+<!-- SCRIPT -->
 
-            |
+<script>
 
-            <a href="mailto:ahernandez@ipn.mx">
-                ahernandez@ipn.mx
-            </a>
+    document.addEventListener('DOMContentLoaded', () => {
 
-        </p>
+        const figures = document.querySelectorAll('.figure-collapsible');
 
-    </footer>
+        figures.forEach(figure => {
 
-    <!-- SCRIPT -->
+            figure.addEventListener('click', () => {
 
-    <script>
+                const image = figure.querySelector('img');
 
-        document.addEventListener('DOMContentLoaded', () => {
-
-            const figures = document.querySelectorAll('.figure-collapsible');
-
-            figures.forEach(figure => {
-
-                figure.addEventListener('click', () => {
-
-                    figure.style.opacity =
-                    figure.style.opacity === '1'
-                    ? '0.7'
-                    : '1';
-
-                });
+                if (image.style.opacity === '1') {
+                    image.style.opacity = '0.7';
+                } else {
+                    image.style.opacity = '1';
+                }
 
             });
 
         });
 
-    </script>
+    });
+
+</script>
+```
 
 </body>
+
 </html>
-```

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial:scale=1.0">
+    <title>PSMB 0.0 - Local Mockup</title>
+    <link rel="shortcut icon" href="SMPS.png"> /*""images/SMPS.png">*/
+
+    <style>
+        /* ========================================================================= */
+        /* ESTILOS CSS GLOBALES                             */
+        /* ========================================================================= */
+        
+        /* CÓDIGO: Habilita el desplazamiento suave nativo del navegador */
+        html {
+            scroll-behavior: smooth; 
+        }
+
+        /* Estilos Generales para el cuerpo de la página */
+        body {
+            font-family: sans-serif; /* Fuente sans-serif legible */
+            margin: 0; /* Elimina el margen predeterminado del navegador */
+            padding: 0; /* Elimina el padding predeterminado */
+            background-color: #f0f0f0; /* Fondo gris claro (rgb(240, 240, 240)) */
+            color: #333; /* Color de texto base (gris oscuro) */
+        }
+        
+        /* Estilos de la Barra Lateral de Navegación (.pagenav) */
+        .pagenav {
+            width: 250px; /* Ancho fijo de la barra */
+            position: fixed; /* Mantiene la barra fija en la pantalla al desplazarse */
+            top: 0;
+            left: 0;
+            height: 100%; /* Ocupa toda la altura de la ventana */
+            background-color: #f0f0f0; /* Mismo color gris que el fondo */
+            color: #333; 
+            padding-top: 0px; /*20px
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil a la derecha */
+            overflow-y: auto; /* Permite el desplazamiento si el menú es muy largo */
+        }
+        
+        /* Estilos para el Logo dentro de la barra lateral */
+        .sidebarlogo {
+            display: block;
+            width: 100%; /* Hace que el logo ocupe el (90%) del ancho de la barra */
+            max-width: 250px; /* Ancho máximo para no exceder los (210) 250px - padding */
+            height: auto; /* Mantiene la proporción, sin altura máxima forzada */
+            margin: 0 auto 0px auto; /* Centra el logo y añade margen (20) inferior */
+            padding: 0 0px; /* Añade un pequeño padding lateral para (10) evitar que toque los bordes */
+        }
+
+        /* Estilos para la lista de navegación */
+        .pagenav ul {
+            list-style: none; /* Elimina los puntos/viñetas de la lista */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Estilos para los enlaces de navegación */
+        .pagenav a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none; /* Quita el subrayado */
+            color: #000; /* Texto de los enlaces en Negro */
+            border-bottom: 1px solid #ccc; /* Separador sutil entre enlaces */
+            font-size: 14px;
+        }
+
+        /* Efecto al pasar el ratón (hover) */
+        .pagenav a:hover {
+            background-color: #ddd; 
+            color: #3e4d6d; /* Color al pasar el ratón */
+            text-decoration: underline; /* Subrayado interactivo */
+        }
+
+        /* ========================================================================= */
+        /* ESTILOS DEL CONTENIDO PRINCIPAL                 */
+        /* ========================================================================= */
+
+        /* Estilos del Contenido Principal (.main) */
+        .main {
+            margin-left: 270px; /* Desplaza el contenido para no quedar debajo de la barra lateral (250px + 20px de espacio) */
+            padding: 20px 30px;
+            background-color: white; /* Contenido principal en fondo blanco */
+            /* padding-bottom ajustado para que el contenido no quede pegado al footer */
+            padding-bottom: 40px; 
+        }
+        
+        /* Estilos para los títulos dentro del contenido principal */
+        .main h1, .main h2 {
+            color: #000; /* Títulos en negro */
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        /* Estilos para las etiquetas <figure> (Contenedores de imágenes) */
+        figure {
+            border: none; 
+            padding: 0; 
+            margin: 20px 0;
+            text-align: center;
+            background-color: transparent;
+        }
+        
+        /* Estilos para las imágenes */
+        figure img {
+            width: 100%;
+            height: auto;
+            max-width: 1000px;
+            filter: grayscale(100%); /* Simulación de imagen */
+            opacity: 0.7;
+            border: none; 
+            display: block;
+            margin: 0 auto;
+        }
+        
+        /* Estilos para las leyendas de las figuras */
+        figcaption {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* ========================================================================= */
+        /* ESTILOS DEL FOOTER                         */
+        /* ========================================================================= */
+
+        /* ESTILOS PARA EL PIE DE PÁGINA (FOOTER) */
+        .site-footer {
+            background-color: #f0f0f0; /* Mismo color gris que la barra y el body */
+            color: #555; 
+            text-align: center;
+            /* CORRECCIÓN: Se reduce el padding vertical para hacer la franja más delgada (de 20px a 10px) */
+            padding: 10px 0; 
+            font-size: 0.8em;
+            
+            /* Posicionamiento: static hace que fluya al final del contenido */
+            position: static; 
+            
+            /* Margen para iniciar después de la barra lateral */
+            margin-left: 270px; 
+            width: auto; 
+
+            border-top: 1px solid #ddd;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Estilo para los enlaces dentro del footer */
+        .site-footer a {
+            color: #3e4d6d; 
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="pagenav">
+                <img src="logo.png" alt="PSMB logo" class="sidebarlogo">
+        <ul>
+            <li><a href="#seccion-bienvenida"> Inicio / Bienvenida</a></li>
+            <li><a href="#seccion-VEV"> Valor esperado en vacio (VEV)</a></li>
+            <li><a href="#seccion-ML"> Masa de leptoquarks (ML)</a></li>
+            <li><a href="#seccion-ERS"> Escala de ruptura de simetría (ERS)</a></li>
+            <li><a href="#seccion-MN"> Masa de neutrinos (MN)</a></li>
+            <li><a href="#seccion-MBV"> Masa de bosones vectoriales (MBV)</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        
+        <h1 id="seccion-bienvenida">Bienvenid@s a PSMB</h1>
+        
+        <p><strong>Physics of the Standard Model and Beyond (PSMB)</strong> es un software educativo para modelar el comportamiento
+           físico de partículas elementales en el marco del Modelo Estándar y sus extensiones, destinado a automatizar el cálculo
+           simbólico y numérico de las ecuaciones del modelo de Pati-Salam, permitiendo al usuario explorar interactivamente su
+           espacio paramétrico, visualizar las etapas de ruptura de simetría y contrastar sus predicciones con resultados 
+           experimentales disponibles.</p>
+        
+        <figure class="figure-collapsible" data-section="bienvenida">
+            <img src="Imagen0.png" alt="Inicio por defecto">
+            <figcaption>Figura 1: Vista procipal por defecto.</figcaption>
+        </figure>
+
+        <p><strong>PSMB</strong> permite a los estudiantes trascender el cálculo
+           manual y centrarse en la física detrás del Modelo Estándar y sus extensiones. El uso de software especializado en física
+           del Modelo Estándar (SM) y Más Allá del Modelo Estándar (BSM) tiene un impacto profundo en la educación científica y la
+           formación de futuros físicos teóricos y experimentales.</p>
+
+        <p><strong>PSMB</strong> representa una innovación educativa que integra la teoría
+           de partículas elementales con las tecnologías de simulación y cálculo simbólico, fortaleciendo el aprendizaje, la
+           capacidad analítica y la formación científica de los estudiantes de física contemporánea.</p>
+        
+        <hr>
+
+        <h2 id="seccion-VEV">Valor esperado en vacio (VEV)</h2>
+        
+        <p><strong>Párrafo 1:</strong> Explica la versión actual el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="VEV">
+            <img src="Imagen1.png" alt="Valor Esperado en Vacio">
+            <figcaption>Figura 2: Valor Esperado en Vacio</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el modulo.</p>
+        
+        <p><strong>Párrafo 1:</strong> Explica el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="VEV">
+            <img src="Imagen2.png" alt="Valor Esperado en Vacio">
+            <figcaption>Figura 3: Valor Esperado en Vacio</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el modulo.</p>
+      
+        <hr>
+
+        <h2 id="seccion-ML">Masa de leptoquarks (ML)</h2>
+        
+        <p><strong>Párrafo 1:</strong> Señala dónde se encuentra el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="ML">
+            <img src="Imagen3.png" alt="Masa de leptoquarks">
+            <figcaption>Figura 4: Masa de leptoquarks</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Menciona la importancia del modulo.</p>
+        
+        <p><strong>Párrafo 1:</strong> Señala dónde se encuentra la información del modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="ML">
+            <img src="Imagen4.png" alt="Masa de leptoquarks">
+            <figcaption>Figura 5: Masa de leptoquarks</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Menciona la importancia del modulo.</p>
+     
+        <hr>
+
+        <h2 id="seccion-ERS">Escala de ruptura de simetría (ERS)</h2>
+        
+        <p><strong>Párrafo 1:</strong> Explica la versión actual el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="ERS">
+            <img src="Imagen5.png" alt="Escala de ruptura de simetría">
+            <figcaption>Figura 2: Escala de ruptura de simetría</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el modulo.</p>
+        
+        <p><strong>Párrafo 1:</strong> Explica el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="ERS">
+            <img src="Imagen6.png" alt="Escala de ruptura de simetría">
+            <figcaption>Figura 3: Escala de ruptura de simetría</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el modulo.</p>
+      
+        <hr>
+
+        <h2 id="seccion-MN">Masa de neutrinos (MN)</h2>
+        
+        <p><strong>Párrafo 1:</strong> Describe el propósito del modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="MN">
+            <img src="Imagen7.png" alt="Masa de neutrinos (MN)">
+            <figcaption>Figura 4.1: Masa de neutrinos (MN)</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Advierte sobre el modulo.</p>
+
+        <p><strong>Párrafo 1:</strong> Describe el propósito del modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="MN">
+            <img src="Imagen7.png" alt="Masa de neutrinos (MN)">
+            <figcaption>Figura 4.1: Masa de neutrinos (MN)</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Advierte sobre el modulo.</p>
+        
+        <hr>
+
+        <h2 id="seccion-MBV">Masa de bosones vectoriales (MBV)</h2>
+        
+        <p><strong>Párrafo 1:</strong> Indica cómo buscar el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="MBV">
+            <img src="Imagen8.png" alt="Masa de bosones vectoriales (MBV)">
+            <figcaption>Figura 8: Masa de bosones vectoriales (MBV)</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Anima a los usuarios a usarlo.</p>
+
+        <p><strong>Párrafo 1:</strong> Indica cómo buscar el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="MBV">
+            <img src="Imagen9.png" alt="Masa de bosones vectoriales (MBV)">
+            <figcaption>Figura 9: Masa de bosones vectoriales (MBV)</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Anima a los usuarios a usarlo.</p>
+        
+        <p><strong>Párrafo 1:</strong> Indica cómo buscar el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="MBV">
+            <img src="Imagen10.png" alt="Masa de bosones vectoriales (MBV)">
+            <figcaption>Figura 10: Masa de bosones vectoriales (MBV)</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Anima a los usuarios a usarlo.</p>
+
+        <p><strong>Párrafo 1:</strong> Indica cómo buscar el modulo.</p>
+        
+        <figure class="figure-collapsible" data-section="MBV">
+            <img src="Imagen11.png" alt="Masa de bosones vectoriales (MBV)">
+            <figcaption>Figura 11: Masa de bosones vectoriales (MBV)</figcaption>
+        </figure>
+        
+        <p><strong>Párrafo 2:</strong> Anima a los usuarios a usarlo.</p>
+    </div>
+    <footer class="site-footer">
+        <p>
+            &copy; 2026 PSMB. Todos los Derechos Reservados.
+            <a href="#seccion-bienvenida">al2213800547@azc.uam.mx</a> | 
+            <a href="#seccion-bienvenida">dagarciar@ipn.mx</a> | 
+            <a href="#seccion-bienvenida">ahernandez@ipn.mx</a>
+        </p>
+    </footer>
+    <script>
+        /**
+         * COMENTARIO JS: Este script añade interactividad a la página.
+         */
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const figures = document.querySelectorAll('.figure-collapsible');
+            
+            // COMENTARIO JS: Simulación de la funcionalidad de colapsar/expandir en figuras
+            figures.forEach(figure => {
+                figure.addEventListener('click', () => {
+                    alert('Simulación de Expansión/Colapso de Figura. (Efecto del "collapsible.js" ficticio).');
+                    
+                    // Alterna la opacidad de la imagen al hacer clic
+                    figure.style.opacity = figure.style.opacity === '1' ? '0.7' : '1';
+                });
+            });
+        });
+    </script>
+    </body>
+</html>

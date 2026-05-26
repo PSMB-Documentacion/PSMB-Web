@@ -2,12 +2,18 @@
 
 <html lang="es">
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PSMB 0.0 - Local Mockup</title>
+<title>PSMB 1.0 - Local Mockup</title>
 
 <link rel="shortcut icon" href="SMPS.png">
 
@@ -100,19 +106,34 @@
     /* ========================================================================= */
 
     .download-link {
-        margin-left: 15px;
-        font-size: 0.5em;
+        margin-left: 14px;
+        font-size: 0.48em;
         font-weight: bold;
+        color: #0074d9;
         text-decoration: none;
-        color: #0066cc;
-        transition: 0.3s;
-        white-space: nowrap;
+        transition: all 0.25s ease;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .download-link:hover {
+        color: #005bb5;
         text-decoration: underline;
-        color: #004c99;
+        transform: scale(1.06);
+        text-shadow: 0 0 6px rgba(0, 116, 217, 0.25);
     }
+
+    @media screen and (max-width: 768px) {
+
+        .download-link {
+            display: block;
+            margin-top: 10px;
+            margin-left: 0;
+            font-size: 0.55em;
+        }
+
+    }
+
 
     /* ========================================================================= */
     /* FIGURAS */
@@ -175,6 +196,10 @@
 
     @media screen and (max-width: 768px) {
 
+        /* =============================== */
+        /* MENU RESPONSIVE MEJORADO */
+        /* =============================== */
+
         .pagenav {
             position: relative;
             width: 100%;
@@ -216,6 +241,10 @@
             transform: scale(1.02);
         }
 
+        /* =============================== */
+        /* CONTENIDO */
+        /* =============================== */
+
         .main {
             margin-left: 0;
             padding: 18px;
@@ -228,7 +257,7 @@
 
         .main h1 {
             font-size: 1.8rem;
-            line-height: 1.5;
+            line-height: 1.3;
         }
 
         .main h2 {
@@ -243,13 +272,6 @@
 
         figure img {
             border-radius: 10px;
-        }
-
-        .download-link {
-            display: block;
-            margin-top: 10px;
-            margin-left: 0;
-            font-size: 0.6em;
         }
     }
 
@@ -271,6 +293,7 @@
         <li><a href="#seccion-ML">Masa de leptoquarks (ML)</a></li>
         <li><a href="#seccion-ERS">Escala de ruptura de simetría (ERS)</a></li>
         <li><a href="#seccion-MN">Masa de neutrinos (MN)</a></li>
+        <li><a href="#seccion-MBE">Masa de bosones escalares (MBE)</a></li>
         <li><a href="#seccion-MBV">Masa de bosones vectoriales (MBV)</a></li>
     </ul>
 
@@ -281,11 +304,19 @@
 <div class="main">
 
     <h1 id="seccion-bienvenida">
-        Bienvenid@s a PSMB
-        <a href="https://github.com/PSMB-Documentacion/PSMB-Web/releases/download/v1.0/PSMB.exe" target="_blank">
-            (Descarga PSMB para Windows aquí)
-        </a>
-    </h1>
+
+    Bienvenid@s a PSMB
+
+    <a
+        href="https://github.com/PSMB-Documentacion/PSMB-Web/releases/download/v1.0/PSMB.exe"
+        target="_blank"
+        class="download-link">
+
+        (Descarga PSMB para Windows aquí)
+
+    </a>
+
+</h1>
 
     <p>
         <strong>Physics of the Standard Model and Beyond (PSMB)</strong>
@@ -313,6 +344,304 @@
         elementales con las tecnologías de simulación y cálculo simbólico, fortaleciendo el aprendizaje,
         la capacidad analítica y la formación científica de los estudiantes de física contemporánea.
     </p>
+
+    <hr>
+
+    <h2 id="seccion-VEV">Valor esperado en vacío (VEV)</h2>
+
+    <p><strong>Párrafo 1:</strong> Explica la versión actual del módulo.</p>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen1.png" alt="Valor esperado en vacío">
+        <figcaption>Figura 2: Valor esperado en vacío.</figcaption>
+    </figure>
+
+    <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el módulo.</p>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen2.png" alt="Valor esperado en vacío">
+        <figcaption>Figura 3: Valor esperado en vacío.</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2 id="seccion-ML">Masa de leptoquarks (ML)</h2>
+
+    <p><strong>Párrafo 1:</strong> Señala dónde se encuentra el módulo.</p>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen3.png" alt="Masa de leptoquarks">
+        <figcaption>Figura 4: Masa de leptoquarks.</figcaption>
+    </figure>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen4.png" alt="Masa de leptoquarks">
+        <figcaption>Figura 5: Masa de leptoquarks.</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2 id="seccion-ERS">Escala de ruptura de simetría (ERS)</h2>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen5.png" alt="Escala de ruptura de simetría">
+        <figcaption>Figura 6: Escala de ruptura de simetría.</figcaption>
+    </figure>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen6.png" alt="Escala de ruptura de simetría">
+        <figcaption>Figura 7: Escala de ruptura de simetría.</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2 id="seccion-MN">Masa de neutrinos (MN)</h2>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen7.png" alt="Masa de neutrinos">
+        <figcaption>Figura 8: Masa de neutrinos.</figcaption>
+    </figure>
+
+    <hr>
+
+<h2 id="seccion-MBE">Masa de bosones escalares (MBE)</h2>
+
+<p>
+    En modelos más allá del Modelo Estándar, como los modelos de dos dobletes de Higgs,
+    también se incluyen términos cuadráticos que afectan la masa de nuevos bosones de Higgs
+    y posibles fermiones. Por otro lado, los términos de interacción describen cómo el campo
+    de Higgs interactúa con otros campos, como los fermiones y los bosones gauge.
+    Estos términos son esenciales para la generación de masas de partículas mediante
+    la ruptura de simetría. En el caso de modelos como Pati-Salam o los modelos de Higgs compuesto,
+    los términos de interacción pueden ser más complejos e incluir múltiples campos de Higgs,
+    resultando en un potencial más rico y la posibilidad de nuevas interacciones.
+</p>
+
+<br>
+
+<p>
+    En nuestro modelo, los términos cuadráticos, cruciales para determinar las masas y mezclas
+    de las fluctuaciones, son:
+</p>
+
+<div style="text-align:center; overflow-x:auto;">
+
+\[
+\begin{aligned}
+
+V_{\text{quadratic}} = &
+-2 \mu_R^2\delta R_{i \alpha} \delta R^{i \alpha}
+
++ 4 \lambda_{R1}
+R_{i \alpha}^{(0)}
+R^{(0)i \alpha}
+\delta R_{i \alpha}
+\delta R^{i \alpha}
+
+\\
+
+& + 4 \lambda_{R2}
+R_{j \beta}^{(0)}
+R^{(0)j \alpha}
+\delta R_{i \alpha}
+\delta R^{i \alpha}
+
++ \lambda_{R3}
+\delta R_{i4}
+\delta R^{i4}
+
+\end{aligned}
+\]
+
+</div>
+
+<p>
+    El primer término
+    \( -2 \mu_R^2\delta R_{i \alpha} \delta R^{i \alpha} \),
+    tiene una masa efectiva dada por
+    \( -2 \mu_R^2 \),
+    este término da una contribución uniforme a las masas
+    de todos los componentes de las fluctuaciones
+    \( \delta R_{i \alpha} \).
+</p>
+
+<p>
+    El segundo término
+
+    \(
+    4 \lambda_{R1}
+    R_{i \alpha}^{(0)}
+    R^{(0)i \alpha}
+    \delta R_{i \alpha}
+    \delta R^{i \alpha}
+    \)
+
+    describe cómo el VEV del campo de Higgs
+    \( R_{i \alpha}^{(0)} \)
+    afecta las masas cuadradas de las fluctuaciones
+    \( \delta R_{i \alpha} \).
+</p>
+
+<p>
+    El tercer término
+
+    \(
+    4 \lambda_{R2}
+    R_{j \beta}^{(0)}
+    R^{(0)j \alpha}
+    \delta R_{i \alpha}
+    \delta R^{i \alpha}
+    \)
+
+    también depende del VEV
+
+    \(
+    R_{j \beta}^{(0)}
+    R^{(0)j \alpha}
+    \),
+
+    pero tiene una estructura más específica.
+    Los índices
+    \( (j,\beta) \)
+    y
+    \( (j,\alpha) \)
+    están relacionados, lo que introduce un acoplamiento cruzado
+    entre diferentes componentes de las fluctuaciones;
+    describe cómo la mezcla entre los componentes del VEV
+    afecta a las masas cuadráticas.
+</p>
+
+<p>
+    El cuarto término
+
+    \(
+    \lambda_{R3}
+    \delta R_{i4}
+    \delta R^{i4}
+    \)
+
+    es específico para las fluctuaciones
+    \( \delta R_{i4} \),
+    es decir, aquellos componentes donde el índice
+    \( \alpha = 4 \),
+    representa un término de masa específico para los componentes
+    \( \delta R_{i4} \),
+    independiente de otras fluctuaciones.
+</p>
+
+<p>
+    Este término introduce una masa efectiva específica
+    para las fluctuaciones
+    \( \delta R_{i4} \),
+    modulada únicamente por el acoplamiento
+    \( \lambda_{R3} \).
+</p>
+
+<br>
+
+<p>
+    Para determinar
+    \( M_{i\alpha, j\beta} \),
+    derivamos dos veces
+    \( V \)
+    con respecto a
+    \( \delta R_{i \alpha} \)
+    y
+    \( \delta R_{j\beta} \):
+</p>
+
+<div style="text-align:center; overflow-x:auto;">
+
+\[
+M_{i\alpha, j\beta} =
+\frac{\partial^2 V}
+{\partial (\delta R_{i\alpha})
+\partial (\delta R_{j\beta})}
+\bigg|_{\text{VEV}}
+\]
+
+</div>
+
+<p>
+    Con el VEV diagonal
+    \( (v, v, v, v_x) \),
+    el término de masa es:
+</p>
+
+<div style="text-align:center; overflow-x:auto;">
+
+\[
+m_{ii} =
+-2 \mu_R^2
++ 4 (\lambda_{R1}+\lambda_{R2})
+(3v^2 + v_x^2)
++ \lambda_{R3}\delta_{i4}
+\]
+
+</div>
+
+<p>
+    Las curvas para
+    \( m_{ii} \)
+    y
+    \( m_{i4} \)
+    se sobreponen debido a que la contribución adicional de
+    \( \lambda_{R3} \)
+    al término
+    \( m_2^2 \)
+    es pequeña comparada con los términos dominantes.
+</p>
+
+<p>
+    Esto coloca a
+    \( m_{ii} \approx m_{i4} \)
+    en la escala de valores considerada.
+</p>
+
+<p>
+    El término añadido al potencial para provocar la ruptura espontánea
+    de simetría no da lugar a una nueva masa.
+</p>
+
+<p>
+    La masa de Higgs
+    \( m_{ii} \)
+    para el valor estable de
+    \( \lambda_{R3}=2.0 \)
+    es de
+    \( 69.56\ \text{TeV} \).
+</p>
+
+<figure class="figure-collapsible">
+    <img src="Imagen12.png" alt="Masa de bosones escalares">
+    <figcaption>
+        Figura 13: Masa de bosones escalares.
+    </figcaption>
+</figure>
+
+    <hr>
+
+    <h2 id="seccion-MBV">Masa de bosones vectoriales (MBV)</h2>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen8.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 9: Masa de bosones vectoriales.</figcaption>
+    </figure>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen9.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 10: Masa de bosones vectoriales.</figcaption>
+    </figure>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen10.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 11: Masa de bosones vectoriales.</figcaption>
+    </figure>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen11.png" alt="Masa de bosones vectoriales">
+        <figcaption>Figura 12: Masa de bosones vectoriales.</figcaption>
+    </figure>
 
 </div>
 

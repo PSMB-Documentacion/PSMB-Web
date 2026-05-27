@@ -19,7 +19,7 @@ MathJax.Hub.Config({
 
     SVG: {
 
-        scale: 100,
+        scale: 110,
         font: "TeX"
 
     }
@@ -430,9 +430,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-
         <figcaption>Figura 8: Masa de neutrinos.</figcaption>
     </figure>
 
-    <hr>
+<hr>
 
-    <h2 id="seccion-MBE">Masa de bosones escalares (MBE)</h2>
+<h2 id="seccion-MBE">Masa de bosones escalares (MBE)</h2>
 
 <p>
 En modelos más allá del Modelo Estándar, como los modelos de dos dobletes de Higgs,
@@ -445,8 +445,6 @@ los términos de interacción pueden ser más complejos e incluir múltiples cam
 resultando en un potencial más rico y la posibilidad de nuevas interacciones.
 </p>
 
-<br>
-
 <p>
 En nuestro modelo, los términos cuadráticos, cruciales para determinar las masas
 y mezclas de las fluctuaciones, son:
@@ -455,47 +453,39 @@ y mezclas de las fluctuaciones, son:
 <p style="text-align:center;">
 
 \[
-V_{\text{quadratic}} =
--2 \mu_R^2\delta R_{i \alpha}\delta R^{i \alpha}
-\]
+\begin{array}{rcl}
 
-</p>
-
-<p style="text-align:center;">
-
-\[
+V_{\text{quadratic}}
+& = &
+-2 \mu_R^2 \delta R_{i \alpha}\delta R^{i \alpha}
 + 4 \lambda_{R1}
 R_{i \alpha}^{(0)}
 R^{(0)i \alpha}
 \delta R_{i \alpha}
 \delta R^{i \alpha}
-\]
 
-</p>
+\\[6pt]
 
-<p style="text-align:center;">
-
-\[
+&
+&
 + 4 \lambda_{R2}
 R_{j \beta}^{(0)}
 R^{(0)j \alpha}
 \delta R_{i \alpha}
 \delta R^{i \alpha}
-\]
 
-</p>
++ \lambda_{R3}
+\delta R_{i4}
+\delta R^{i4}
 
-<p style="text-align:center;">
-
-\[
-+ \lambda_{R3}\delta R_{i4}\delta R^{i4}
+\end{array}
 \]
 
 </p>
 
 <p>
 El primer término
-\(-2 \mu_R^2\delta R_{i \alpha}\delta R^{i \alpha}\)
+\(-2 \mu_R^2 \delta R_{i \alpha}\delta R^{i \alpha}\)
 tiene una masa efectiva dada por
 \(-2 \mu_R^2\).
 Este término da una contribución uniforme a las masas
@@ -505,7 +495,8 @@ de todos los componentes de las fluctuaciones
 
 <p>
 El segundo término
-\(4 \lambda_{R1}R_{i \alpha}^{(0)}R^{(0)i \alpha}\delta R_{i \alpha}\delta R^{i \alpha}\)
+\(4 \lambda_{R1} R_{i \alpha}^{(0)} R^{(0)i \alpha}
+\delta R_{i \alpha}\delta R^{i \alpha}\)
 describe cómo el VEV del campo de Higgs
 \(R_{i \alpha}^{(0)}\)
 afecta las masas cuadradas de las fluctuaciones
@@ -514,7 +505,8 @@ afecta las masas cuadradas de las fluctuaciones
 
 <p>
 El tercer término
-\(4 \lambda_{R2}R_{j \beta}^{(0)}R^{(0)j \alpha}\delta R_{i \alpha}\delta R^{i \alpha}\)
+\(4 \lambda_{R2} R_{j \beta}^{(0)} R^{(0)j \alpha}
+\delta R_{i \alpha}\delta R^{i \alpha}\)
 también depende del VEV
 \(R_{j \beta}^{(0)}R^{(0)j \alpha}\),
 pero tiene una estructura más específica.
@@ -544,8 +536,6 @@ para las fluctuaciones
 modulada únicamente por el acoplamiento
 \(\lambda_{R3}\).
 </p>
-
-<br>
 
 <p>
 Para determinar
@@ -579,11 +569,14 @@ el término de masa es:
 <p style="text-align:center;">
 
 \[
-m_{ii} =
+m_{ii}
+=
 -2 \mu_R^2
-+ 4(\lambda_{R1}+\lambda_{R2})
++
+4(\lambda_{R1}+\lambda_{R2})
 (3v^2 + v_x^2)
-+ \lambda_{R3}\delta_{i4}
++
+\lambda_{R3}\delta_{i4}
 \]
 
 </p>
@@ -593,7 +586,7 @@ Las curvas para
 \(m_{ii}\)
 y
 \(m_{i4}\)
-se sobreponen (Figura...) debido a que la contribución adicional de
+se sobreponen debido a que la contribución adicional de
 \(\lambda_{R3}\)
 al término
 \(m_2^2\)
@@ -606,7 +599,9 @@ en la escala de valores considerada.
 <p>
 El término añadido al potencial para provocar la ruptura espontánea
 de simetría no da lugar a una nueva masa.
+</p>
 
+<p>
 La masa de Higgs
 \(m_{ii}\)
 para el valor estable de
@@ -614,6 +609,10 @@ para el valor estable de
 es de
 \(69.56\ \text{TeV}\).
 </p>
+
+
+
+
     <figure class="figure-collapsible">
        <img src="Imagen12.png" alt="Masa de bosones escalares">
        <figcaption>Figura 13: Masa de bosones escalares.</figcaption>

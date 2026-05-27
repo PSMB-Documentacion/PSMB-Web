@@ -289,16 +289,23 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-
     }
 
 /* ========================================================================= */
-/* FORMULAS MATEMATICAS */
+/* AJUSTE UNIFORME PARA FORMULAS EN PYQT4 */
 /* ========================================================================= */
 
-.MathJax {
-    font-size: 145% !important;
+.MathJax,
+.MathJax_Display,
+.MathJax span,
+.MathJax_Display span {
+
+    font-size: 1.05em !important;
+
 }
 
 .MathJax_Display {
-    font-size: 155% !important;
-    margin: 18px 0 !important;
+
+    margin-top: 14px !important;
+    margin-bottom: 14px !important;
+
 }
 
 </style>

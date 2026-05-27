@@ -4,12 +4,48 @@
 
 
 
+
+
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+
+    tex2jax: {
+
+        inlineMath: [['\\(','\\)']],
+        displayMath: [['\\[','\\]']]
+
+    },
+
+    "HTML-CSS": {
+
+        scale: 100,
+        availableFonts: ["TeX"],
+        preferredFont: "TeX",
+        webFont: "TeX",
+        imageFont: null
+
+    }
+
+});
+
+</script>
+
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+
+
+
+
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PSMB 1.0 - Local Mockup</title>
+<title>PSMB 0.0 - Local Mockup</title>
 
 <link rel="shortcut icon" href="SMPS.png">
 
@@ -102,34 +138,33 @@
     /* ========================================================================= */
 
     .download-link {
-        margin-left: 14px;
-        font-size: 0.48em;
-        font-weight: bold;
-        color: #0074d9;
-        text-decoration: none;
-        transition: all 0.25s ease;
-        display: inline-block;
-        vertical-align: middle;
-    }
+         margin-left: 14px;
+         font-size: 0.48em;
+         font-weight: bold;
+         color: #0074d9;
+         text-decoration: none;
+         transition: all 0.25s ease;
+         display: inline-block;
+         vertical-align: middle;
+     }
 
-    .download-link:hover {
-        color: #005bb5;
-        text-decoration: underline;
-        transform: scale(1.06);
-        text-shadow: 0 0 6px rgba(0, 116, 217, 0.25);
-    }
+     .download-link:hover {
+          color: #005bb5;
+          text-decoration: underline;
+          transform: scale(1.06);
+          text-shadow: 0 0 6px rgba(0, 116, 217, 0.25);
+     }
 
-    @media screen and (max-width: 768px) {
+     @media screen and (max-width: 768px) {
 
         .download-link {
             display: block;
             margin-top: 10px;
             margin-left: 0;
             font-size: 0.55em;
-        }
+            }
 
-    }
-
+       }
 
     /* ========================================================================= */
     /* FIGURAS */
@@ -271,109 +306,7 @@
         }
     }
 
-
-
-
-<script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
-                processEscapes: true
-            },
-            "HTML-CSS": {
-                matchFontHeight: true, /* Sincroniza el tamaño de la fórmula con el texto */
-                scale: 100,            /* Ajuste base en porcentaje */
-                availableFonts: ["STIX","TeX"]
-            }
-        });
-    </script>
-    
-    <script type="text/javascript" async
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-
-
-
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 14px; /* Cambia este valor para ajustar todo el texto y las fórmulas a la vez */
-            line-height: 1.6;
-            color: #333;
-            padding: 15px;
-            background-color: #fff;
-        }
-        p {
-            margin-bottom: 1.2em;
-            text-align: justify;
-        }
-        .formula-block {
-            text-align: center;
-            margin: 1.5em 0;
-            font-size: 1.05em; /* Ligero realce para fórmulas independientes */
-        }
-    </style>
-
-
-
-
-
-
-<meta charset="UTF-8">
-    <title>Visualización de Potencial</title>
-    
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            },
-            options: {
-                processHtmlClass: 'tex2jax_process'
-            },
-            chtml: {
-                matchFontHeight: true /* Mantiene las fórmulas del mismo tamaño que tu texto */
-            }
-        };
-    </script>
-
-    <script id="MathJax-script" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js">
-    </script>
-
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 14px; /* Modifica esto para cambiar el tamaño de letra y fórmulas en conjunto */
-            line-height: 1.6;
-            color: #333;
-            padding: 15px;
-            background-color: #fff;
-        }
-        p {
-            margin-bottom: 1.2em;
-            text-align: justify;
-        }
-        .formula-block {
-            text-align: center;
-            margin: 1.5em 0;
-            font-size: 1.05em;
-        }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
+</style>
 
 </head>
 
@@ -414,7 +347,7 @@
 
     </a>
 
-</h1>
+    </h1>
 
     <p>
         <strong>Physics of the Standard Model and Beyond (PSMB)</strong>
@@ -502,39 +435,202 @@
 
     <hr>
 
-<h2 id="seccion-MBE">Masa de bosones escalares (MBE)</h2>
+    <h2 id="seccion-MBE">Masa de bosones escalares (MBE)</h2>
 
-<p>En modelos más allá del Modelo Estándar, como los modelos de dos dobletes de Higgs, también se incluyen términos cuadráticos que afectan la masa de nuevos bosones de Higgs y posibles fermiones. Por otro lado, los términos de interacción describen cómo el campo de Higgs interactúa con otros campos, como los fermiones y los bosones gauge. Estos términos son esenciales para la generación de masas de partículas mediante la ruptura de simetría. En el caso de modelos como Pati-Salam o los modelos de Higgs compuesto, los términos de interacción pueden ser más complejos e incluir múltiples campos de Higgs, resultando en un potencial más rico y la posibilidad de nuevas interacciones.</p>
+<p>
+En modelos más allá del Modelo Estándar, como los modelos de dos dobletes de Higgs,
+también se incluyen términos cuadráticos que afectan la masa de nuevos bosones de Higgs
+y posibles fermiones. Por otro lado, los términos de interacción describen cómo el campo
+de Higgs interactúa con otros campos, como los fermiones y los bosones gauge.
+Estos términos son esenciales para la generación de masas de partículas mediante
+la ruptura de simetría. En el caso de modelos como Pati-Salam o los modelos de Higgs compuesto,
+los términos de interacción pueden ser más complejos e incluir múltiples campos de Higgs,
+resultando en un potencial más rico y la posibilidad de nuevas interacciones.
+</p>
 
-    <p>En nuestro modelo, los términos cuadráticos, cruciales para determinar las masas y mezclas de las fluctuaciones, son:</p>
+<br>
 
-    <div class="formula-block">
-        $$V_{\text{quadratic}} = -2\mu_R^2 \delta R_{i\alpha} \delta R_{i\alpha} + 4\lambda_{R1} R^{(0)}_{i\alpha} R^{(0)i\alpha} \delta R_{i\alpha} \delta R_{i\alpha} + 4\lambda_{R2} R^{(0)}_{j\beta} R^{(0)j\alpha} \delta R_{i\alpha} \delta R_{i\alpha} + \lambda_{R3} \delta R_{i4} \delta R_{i4}$$
-    </div>
+<p>
+En nuestro modelo, los términos cuadráticos, cruciales para determinar las masas
+y mezclas de las fluctuaciones, son:
+</p>
 
-    <p>El primer término $-2\mu_R^2 \delta R_{i\alpha} \delta R_{i\alpha}$, tiene una masa efectiva dada por $-2\mu_R^2$, este término da una contribución uniforme a las masas de todos los componentes de las fluctuaciones $\delta R_{i\alpha}$. El segundo término $4\lambda_{R1} R^{(0)}_{i\alpha} R^{(0)i\alpha} \delta R_{i\alpha} \delta R_{i\alpha}$ describe cómo el VEV del campo de Higgs $R^{(0)}_{i\alpha}$ afecta las masas cuadradas de las fluctuaciones $\delta R_{i\alpha}$. El tercer término $4\lambda_{R2} R^{(0)}_{j\beta} R^{(0)j\alpha} \delta R_{i\alpha} \delta R_{i\alpha}$ también depende del VEV $R^{(0)}_{j\beta} R^{(0)j\alpha}$, pero tiene una estructura más específica. Los índices $(j, \beta)$ y $(j, \alpha)$ están relacionados, lo que introduce un acoplamiento cruzado entre diferentes componentes de las fluctuaciones; describe cómo la mezcla entre los componentes del VEV afecta a las masas cuadráticas. El cuarto término $\lambda_{R3} \delta R_{i4} \delta R_{i4}$ es específico para las fluctuaciones $\delta R_{i4}$, es decir, aquellos componentes donde el índice $\alpha = 4$, representa un término de masa específico para los componentes $\delta R_{i4}$, independiente de otras fluctuaciones. Este término introduce una masa efectiva específica para las fluctuaciones $\delta R_{i4}$, modulada únicamente por el acoplamiento $\lambda_{R3}$.</p>
+<p style="text-align:center;">
 
-    <p>Para determinar $M_{i\alpha, j\beta}$, derivamos dos veces $V$ con respecto a $\delta R_{i\alpha}$ y $\delta R_{j\beta}$:</p>
+\[
+V_{\text{quadratic}} =
+-2 \mu_R^2\delta R_{i \alpha}\delta R^{i \alpha}
+\]
 
-    <div class="formula-block">
-        $$M_{i\alpha, j\beta} = \left. \frac{\partial^2 V}{\partial(\delta R_{i\alpha})\partial(\delta R_{j\beta})} \right|_{\text{VEV}}$$
-    </div>
+</p>
 
-    <p>Con el VEV diagonal $(v, v, v, v_x)$, el término de masa es:</p>
+<p style="text-align:center;">
 
-    <div class="formula-block">
-        $$m_{ii} = -2\mu_R^2 + 4(\lambda_{R1} + \lambda_{R2})(3v^2 + v_x^2) + \lambda_{R3}\delta_{i4}$$
-    </div>
+\[
++ 4 \lambda_{R1}
+R_{i \alpha}^{(0)}
+R^{(0)i \alpha}
+\delta R_{i \alpha}
+\delta R^{i \alpha}
+\]
 
-    <p>Las curvas para $m_{ii}$ y $m_{i4}$ se sobreponen (Figura A.6) debido a que la contribución adicional de $\lambda_{R3}$ al término $m_2^2$ es pequeña comparada con los términos dominantes. Esto coloca a $m_{ii} \approx m_{i4}$ en la escala de valores considerada. El término añadido al potencial para provocar la ruptura espontánea de simetría no da lugar a una nueva masa. La masa de Higgs $m_{ii}$ para el valor estable de $\lambda_{R3} = 2.0$ es de $69.56\text{ TeV}$.</p>
+</p>
 
+<p style="text-align:center;">
 
-<figure class="figure-collapsible">
-    <img src="Imagen12.png" alt="Masa de bosones escalares">
-    <figcaption>
-        Figura 13: Masa de bosones escalares.
-    </figcaption>
-</figure>
+\[
++ 4 \lambda_{R2}
+R_{j \beta}^{(0)}
+R^{(0)j \alpha}
+\delta R_{i \alpha}
+\delta R^{i \alpha}
+\]
+
+</p>
+
+<p style="text-align:center;">
+
+\[
++ \lambda_{R3}\delta R_{i4}\delta R^{i4}
+\]
+
+</p>
+
+<p>
+El primer término
+\(-2 \mu_R^2\delta R_{i \alpha}\delta R^{i \alpha}\)
+tiene una masa efectiva dada por
+\(-2 \mu_R^2\).
+Este término da una contribución uniforme a las masas
+de todos los componentes de las fluctuaciones
+\(\delta R_{i \alpha}\).
+</p>
+
+<p>
+El segundo término
+\(4 \lambda_{R1}R_{i \alpha}^{(0)}R^{(0)i \alpha}\delta R_{i \alpha}\delta R^{i \alpha}\)
+describe cómo el VEV del campo de Higgs
+\(R_{i \alpha}^{(0)}\)
+afecta las masas cuadradas de las fluctuaciones
+\(\delta R_{i \alpha}\).
+</p>
+
+<p>
+El tercer término
+\(4 \lambda_{R2}R_{j \beta}^{(0)}R^{(0)j \alpha}\delta R_{i \alpha}\delta R^{i \alpha}\)
+también depende del VEV
+\(R_{j \beta}^{(0)}R^{(0)j \alpha}\),
+pero tiene una estructura más específica.
+Los índices
+\((j,\beta)\)
+y
+\((j,\alpha)\)
+están relacionados, lo que introduce un acoplamiento cruzado
+entre diferentes componentes de las fluctuaciones;
+describe cómo la mezcla entre los componentes del VEV
+afecta a las masas cuadráticas.
+</p>
+
+<p>
+El cuarto término
+\(\lambda_{R3}\delta R_{i4}\delta R^{i4}\)
+es específico para las fluctuaciones
+\(\delta R_{i4}\),
+es decir, aquellos componentes donde el índice
+\(\alpha = 4\),
+representa un término de masa específico para los componentes
+\(\delta R_{i4}\),
+independiente de otras fluctuaciones.
+Este término introduce una masa efectiva específica
+para las fluctuaciones
+\(\delta R_{i4}\),
+modulada únicamente por el acoplamiento
+\(\lambda_{R3}\).
+</p>
+
+<br>
+
+<p>
+Para determinar
+\(M_{i\alpha, j\beta}\),
+derivamos dos veces
+\(V\)
+con respecto a
+\(\delta R_{i \alpha}\)
+y
+\(\delta R_{j\beta}\):
+</p>
+
+<p style="text-align:center;">
+
+\[
+M_{i\alpha, j\beta} =
+\frac{\partial^2 V}
+{\partial (\delta R_{i\alpha})
+\partial (\delta R_{j\beta})}
+\Big|_{\text{VEV}}
+\]
+
+</p>
+
+<p>
+Con el VEV diagonal
+\((v, v, v, v_x)\),
+el término de masa es:
+</p>
+
+<p style="text-align:center;">
+
+\[
+m_{ii} =
+-2 \mu_R^2
++ 4(\lambda_{R1}+\lambda_{R2})
+(3v^2 + v_x^2)
++ \lambda_{R3}\delta_{i4}
+\]
+
+</p>
+
+<p>
+Las curvas para
+\(m_{ii}\)
+y
+\(m_{i4}\)
+se sobreponen (Figura...) debido a que la contribución adicional de
+\(\lambda_{R3}\)
+al término
+\(m_2^2\)
+es pequeña comparada con los términos dominantes.
+Esto coloca a
+\(m_{ii} \approx m_{i4}\)
+en la escala de valores considerada.
+</p>
+
+<p>
+El término añadido al potencial para provocar la ruptura espontánea
+de simetría no da lugar a una nueva masa.
+
+La masa de Higgs
+\(m_{ii}\)
+para el valor estable de
+\(\lambda_{R3}=2.0\)
+es de
+\(69.56\ \text{TeV}\).
+</p>
+    <figure class="figure-collapsible">
+       <img src="Imagen12.png" alt="Masa de bosones escalares">
+       <figcaption>Figura 13: Masa de bosones escalares.</figcaption>
+    </figure>
+
+    <p>
+       <strong>Párrafo 2:</strong>
+       Describe el análisis físico y las opciones de simulación disponibles.
+    </p>
+
+    <figure class="figure-collapsible">
+        <img src="Imagen13.png" alt="Masa de bosones escalares">
+        <figcaption>Figura 14: Masa de bosones escalares.</figcaption>
+    </figure>
 
     <hr>
 
@@ -619,8 +715,6 @@
     });
 
 </script>
-
-
 
 </body>
 

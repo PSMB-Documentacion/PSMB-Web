@@ -2,6 +2,10 @@
 
 <html lang="es">
 
+<!-- ===================================================================== -->
+<!-- CONFIGURACIÓN MATHJAX SVG PARA PYQT4 QWEBVIEW -->
+<!-- ===================================================================== -->
+
 <script type="text/x-mathjax-config">
 
 MathJax.Hub.Config({
@@ -15,7 +19,7 @@ MathJax.Hub.Config({
 
     SVG: {
 
-        scale: 90,
+        scale: 125,
         font: "TeX"
 
     }
@@ -466,40 +470,31 @@ y mezclas de las fluctuaciones, son:
 <p style="text-align:center;">
 
 \[
-V_{\text{quadratic}} =
+\begin{array}{rcl}
+
+V_{\text{quadratic}}
+& = &
 -2 \mu_R^2\delta R_{i \alpha}\delta R^{i \alpha}
-\]
-
-</p>
-
-<p style="text-align:center;">
-
-\[
 + 4 \lambda_{R1}
 R_{i \alpha}^{(0)}
 R^{(0)i \alpha}
 \delta R_{i \alpha}
 \delta R^{i \alpha}
-\]
 
-</p>
+\\[6pt]
 
-<p style="text-align:center;">
-
-\[
+&
+&
 + 4 \lambda_{R2}
 R_{j \beta}^{(0)}
 R^{(0)j \alpha}
 \delta R_{i \alpha}
 \delta R^{i \alpha}
-\]
++ \lambda_{R3}
+\delta R_{i4}
+\delta R^{i4}
 
-</p>
-
-<p style="text-align:center;">
-
-\[
-+ \lambda_{R3}\delta R_{i4}\delta R^{i4}
+\end{array}
 \]
 
 </p>
@@ -617,7 +612,9 @@ en la escala de valores considerada.
 <p>
 El término añadido al potencial para provocar la ruptura espontánea
 de simetría no da lugar a una nueva masa.
+</p>
 
+<p>
 La masa de Higgs
 \(m_{ii}\)
 para el valor estable de

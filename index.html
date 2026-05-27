@@ -303,6 +303,34 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-
         }
     }
 
+
+
+
+
+
+
+   /* ESTILO PARA ECUACIONES GRANDES EN PYQT4 */
+
+
+.math-display {
+
+    font-size: 1.35em;
+    overflow-x: auto;
+    margin: 15px 0;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 </style>
 
 </head>
@@ -450,7 +478,7 @@ En nuestro modelo, los términos cuadráticos, cruciales para determinar las mas
 y mezclas de las fluctuaciones, son:
 </p>
 
-<p style="text-align:center;">
+<div class="math-display">
 
 \[
 \begin{array}{rcl}
@@ -481,7 +509,7 @@ R^{(0)j \alpha}
 \end{array}
 \]
 
-</p>
+</div>
 
 <p>
 El primer término
@@ -548,7 +576,7 @@ y
 \(\delta R_{j\beta}\):
 </p>
 
-<p style="text-align:center;">
+<div class="math-display">
 
 \[
 M_{i\alpha, j\beta} =
@@ -558,7 +586,7 @@ M_{i\alpha, j\beta} =
 \Big|_{\text{VEV}}
 \]
 
-</p>
+</div>
 
 <p>
 Con el VEV diagonal
@@ -566,7 +594,7 @@ Con el VEV diagonal
 el término de masa es:
 </p>
 
-<p style="text-align:center;">
+<div class="math-display">
 
 \[
 m_{ii}
@@ -579,7 +607,7 @@ m_{ii}
 \lambda_{R3}\delta_{i4}
 \]
 
-</p>
+</div>
 
 <p>
 Las curvas para
@@ -599,7 +627,9 @@ en la escala de valores considerada.
 <p>
 El término añadido al potencial para provocar la ruptura espontánea
 de simetría no da lugar a una nueva masa.
+</p>
 
+<p>
 La masa de Higgs
 \(m_{ii}\)
 para el valor estable de
@@ -607,7 +637,6 @@ para el valor estable de
 es de
 \(69.56\ \text{TeV}\).
 </p>
-
 
 
 

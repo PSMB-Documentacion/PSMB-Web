@@ -2,10 +2,23 @@
 
 <html lang="es">
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
 
-<script id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+        displayMath: [['\\[','\\]']]
+    },
+
+    "HTML-CSS": {
+        linebreaks: { automatic: true }
+    }
+
+});
+</script>
+
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML">
 </script>
 
 <head>
@@ -527,9 +540,7 @@ R^{(0)j \alpha}
     representa un término de masa específico para los componentes
     \( \delta R_{i4} \),
     independiente de otras fluctuaciones.
-</p>
 
-<p>
     Este término introduce una masa efectiva específica
     para las fluctuaciones
     \( \delta R_{i4} \),
@@ -585,14 +596,12 @@ m_{ii} =
     \( m_{ii} \)
     y
     \( m_{i4} \)
-    se sobreponen debido a que la contribución adicional de
+    se sobreponen (Figura...) debido a que la contribución adicional de
     \( \lambda_{R3} \)
     al término
     \( m_2^2 \)
     es pequeña comparada con los términos dominantes.
-</p>
 
-<p>
     Esto coloca a
     \( m_{ii} \approx m_{i4} \)
     en la escala de valores considerada.
@@ -601,9 +610,7 @@ m_{ii} =
 <p>
     El término añadido al potencial para provocar la ruptura espontánea
     de simetría no da lugar a una nueva masa.
-</p>
 
-<p>
     La masa de Higgs
     \( m_{ii} \)
     para el valor estable de

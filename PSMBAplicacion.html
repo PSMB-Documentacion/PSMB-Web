@@ -399,9 +399,209 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-
         la capacidad analítica y la formación científica de los estudiantes de física contemporánea.
     </p>
 
-    <hr>
+    ```html
+<hr>
 
-    <h2 id="seccion-PH">Potencial de Higgs (PH)</h2>
+<h2 id="seccion-PH">Potencial de Higgs (PH)</h2>
+
+<p>
+La construcción del potencial de Higgs comienza identificando primero el grupo de simetría subyacente y luego
+seleccionando representaciones adecuadas para los campos de Higgs que romperán la simetría
+apropiadamente. En el contexto del modelo de Pati-Salam, los campos de Higgs se asignan típicamente a representaciones como
+\( (4, 2, 1) \) y \( (4, 1, 2) \), que son consistentes con la estructura del grupo de gauge
+\( SU(4)_C \times SU(2)_L \times SU(2)_R \). Estas representaciones se eligen para facilitar la ruptura de simetría paso a paso hasta el Modelo Estándar.
+El potencial de Higgs resultante describe las interacciones entre dos campos escalares, denotados
+\(L_i^\alpha\) y \(R_i^\alpha\), que corresponden a los sectores "izquierdo" (\(L\)) y "derecho" (\(R\))
+dentro del marco de simetría extendida del modelo.
+</p>
+
+<p>
+Estos campos desempeñan un papel central en la ruptura de la simetría y la generación de términos de masa para fermiones a través de
+Acoplamientos de Yukawa. El potencial considerado es:
+</p>
+
+<div class="math-display">
+\[
+\begin{aligned}
+V(L, R)=&
+-2 \mu_{L}^{2} L_{i \alpha} L^{i \alpha}
+-2 \mu_{R}^{2} R_{i \alpha} R^{i \alpha}
+\\
+&
++\lambda_{L1}\left(L_{i \alpha} L^{i \alpha}\right)^2
++\lambda_{R1}\left(R_{i \alpha} R^{i \alpha}\right)^2
+\\
+&
++\lambda_{L2} L_{i \alpha} L^{j \alpha} L^{i \beta} L_{j \beta}
++\lambda_{R2} R_{i \alpha} R^{j \alpha} R^{i \beta} R_{j \beta}
+\\
+&
++\lambda_{LR1} L_{i \alpha} L^{i \alpha} R_{j \beta} R^{j \beta}
++\lambda_{LR2} L_{i \alpha} R^{j \alpha} L^{i \beta} R_{j \beta}
+\\
+&
++\lambda_{LR3}
+\left(
+L_{i \alpha} R^{j \alpha}
+L_{\beta}^{i}
+R_{j}^{\beta}
++\mathrm{h.c.}
+\right)
+\end{aligned}
+\]
+</div>
+
+<p>
+Consideremos \(L\) y \(R\) como una 8-tupla, \(L^{i \alpha}\) y \(R^{i \alpha}\), con \(i=1,2\) y \(\alpha=1,2,3,4\) índices para
+\(SU(2)_R\) y \(SU(4)\), respectivamente. Worah introduce dos bosones de Higgs, los diestros, en la representación \((4,1,2)\):
+</p>
+
+<div class="math-display">
+\[
+R^{i \alpha }=
+\begin{pmatrix}
+R_{11} & R_{12} \\
+R_{21} & R_{22} \\
+R_{31} & R_{32} \\
+R_{41} & R_{42}
+\end{pmatrix}
+\qquad
+\mathrm{con}
+\qquad
+R_{i \alpha}=\left(R^{i \alpha }\right)^*
+\]
+</div>
+
+<p>
+Eso se utilizará para la ruptura de simetría del grupo de Pati-Salam al del Modelo Estándar:
+</p>
+
+<div class="math-display">
+\[
+SU(4)\otimes SU(2)_L \otimes SU(2)_R
+\rightarrow
+SU(3)_C \otimes SU(2)_L \otimes U(1)_Y
+\]
+</div>
+
+<p>
+Y los bosones de Higgs zurdos
+\(L^{i \alpha } \sim(4,2,1)\),
+con
+\(L_{i \alpha }=\left(L^{i \alpha }\right)^{*}\),
+que será responsable de la ruptura de simetría del grupo electrodébil al electromagnetismo:
+</p>
+
+<div class="math-display">
+\[
+SU(3)_C \otimes SU(2)_L \otimes U(1)_Y
+\rightarrow
+SU(3)_C \otimes U(1)_Q
+\]
+</div>
+
+<p>
+Suponemos que \(R\) se transforma en la representación fundamental de \(SU(4)\) y \(SU(2)_R\), pero trivialmente bajo
+\(SU(2)_L\) (es decir, está en la representación \((4,1,2)\)).
+Con esto queremos decir que
+
+\(R^{i \alpha} \mapsto M_{ij} N_{\alpha \beta} R^{j \beta}\),
+
+donde \(M\) y \(N\) son los elementos de \(SU(2)_R\) y \(SU(4)\), respectivamente.
+De manera similar, tomemos \(R_{i \alpha}\) como el conjugado transpuesto de \(R^{i \alpha}\).
+El potencial que corresponde a la ruptura de la primera simetría es:
+</p>
+
+<div class="math-display">
+\[
+\begin{aligned}
+V(R)=&
+-2 \mu_{R}^{2} R_{i \alpha} R^{i \alpha}
++\lambda_{R1}
+\left(
+R_{i \alpha} R^{i \alpha}
+\right)^2
+\\
+&
++\lambda_{R2}
+R_{i \alpha}
+R^{j \alpha}
+R^{i \beta}
+R_{j \beta}
+\end{aligned}
+\]
+</div>
+
+<p>
+Los campos de Higgs pueden expresarse en términos de matrices hermíticas debido a la generalización del mecanismo de Englert-Brout-Higgs para generar masas para bosones de gauge desde el caso familiar de teorías de campos cuánticos hermíticos a un marco más general de teorías de campos PT-simétricas.
+Por lo tanto, podemos escribir
+\(Y_{\alpha}^{\sigma}=R_{i \alpha}R^{i \sigma}\),
+como \(Y\) es hermitiana, es diagonalizable:
+
+\(Y_{\alpha}^{\sigma}=\delta_{\alpha}^{\sigma} v_{\sigma}\).
+
+Aquí,
+\(v_{\sigma}\)
+son los valores propios de la matriz
+\(Y\),
+y
+\(\delta_{\alpha}^{\sigma}\)
+es la delta de Kronecker, que es igual a 1 si
+\(\alpha=\sigma\)
+y 0 en otro caso.
+Y el potencial puede escribirse como:
+</p>
+
+<div class="math-display">
+\[
+V(Y)=
+-2 \mu_{R}^{2} Y_{\alpha}^{\alpha}
++\lambda_{R1}
+\left(
+Y_{\alpha}^{\alpha}
+\right)^2
++\lambda_{R2}
+Y_{\alpha}^{\beta}
+Y_{\beta}^{\alpha}
+\]
+</div>
+
+<p>
+o equivalentemente:
+</p>
+
+<div class="math-display">
+\[
+V(v_\alpha)=
+-2 \mu_{R}^{2}
+\sum_{\alpha} v_{\alpha}
++\lambda_{R1}
+\left(
+\sum_{\alpha} v_{\alpha}
+\right)^2
++\lambda_{R2}
+\sum_{\alpha} v_{\alpha}^{2}
+\]
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <p><strong>Párrafo 1:</strong> Explica la versión actual del módulo.</p>
 
@@ -417,7 +617,72 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-
          <figcaption>Figura 3: Estructura del potencial escalar.</figcaption>
     </figure>
 
+    ```html
+<hr>
+
+<h2 id="seccion-PHM">Potencial de Higgs modificado</h2>
+
+<p>
+Para determinar el VEV, resolvemos la condición de extremo
+\(\partial V /\partial t=0\),
+lo que da como resultado:
+</p>
+
+<div class="math-display">
+\[
+-\mu_{R}^{2}
++
+\lambda_{R1}
+\sum_{\alpha} v_{\alpha}
++
+\lambda_{R2} v_{\alpha}
+=
+0
+\]
+</div>
+
+<p>
+Este sistema de ecuaciones debe resolverse para obtener los valores de
+\(v_{\alpha}\)
+en función de
+\(\mu_{R}\),
+\(\lambda_{R1}\)
+y
+\(\lambda_{R2}\),
+esto dará como resultado el VEV en función de estos parámetros:
+</p>
+
+<div class="math-display">
+\[
+v_1=v_2=v_3=v_4=
+\frac{\mu_R^2}
+{4\lambda_{R1}+\lambda_{R2}}
+\]
+</div>
+
+<p>
+Todas las entradas al VEV son iguales, lo que sugiere que el sistema podría estar en un estado simétrico, ya que no se favorece ninguna dirección en particular en el espacio de parámetros del campo, y por lo tanto no habría ruptura espontánea de simetría. En el contexto de modelos más allá del Modelo Estándar, decidir si existe RES cuando el VEV tiene todas sus entradas iguales es complejo, y requiere un análisis de la estructura del potencial y las simetrías involucradas. La modificación del Potencial de Higgs en modelos más allá del Modelo Estándar es un enfoque viable y comúnmente utilizado para inducir la ruptura de simetría e interacciones del modelo. Esta modificación puede conducir a nuevas dinámicas y a la aparición de fenómenos físicos.
+</p>
+
+<div class="math-display">
+\[
+V=V_{SG}+V_C
+\]
+</div>
+
+<p>
+Aquí,
+\(V_{SG}\)
+representa el potencial que se origina en el grupo de simetría del modelo propuesto, en este caso el modelo de Pati-Salam; y
+\(V_C\)
+es el potencial de control que proponemos para inducir la ruptura de simetría.
+</p>
+
+
+
+
     <hr>
+
 
     <h2 id="seccion-PHM">Potencial de Higgs modificado (PHM)</h2>
 
@@ -435,11 +700,64 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-
          <figcaption>Figura 5: Estructura del potencial escalar.</figcaption>
     </figure>
 
-    <hr>
+    ```html
+<hr>
 
-    <h2 id="seccion-VEV">Valor esperado en vacío (VEV)</h2>
+<h2 id="seccion-VEV">Valor Esperado de Vacío (VEV)</h2>
 
-    <p><strong>Párrafo 1:</strong> Explica la versión actual del módulo.</p>
+<p>
+Con el Potencial de Higgs modificado, obtenemos:
+</p>
+
+<div class="math-display">
+\[
+v=v_1=v_2=v_3=
+\frac{\mu_R^2}
+{
+3\lambda_{R1}
++\lambda_{R2}
++\frac{\lambda_{R1}\lambda_{R2}}
+{\lambda_{R1}+\lambda_{R3}}
+}
+\]
+</div>
+
+<p>
+y
+</p>
+
+<div class="math-display">
+\[
+v_x=v_4=
+\frac{\lambda_{R2}}
+{\lambda_{R2}+\lambda_{R3}}
+\,
+\frac{\mu_R^2}
+{
+3\lambda_{R1}
++\lambda_{R2}
++\frac{\lambda_{R1}\lambda_{R2}}
+{\lambda_{R1}+\lambda_{R3}}
+}
+\]
+</div>
+
+<p>
+Un VEV con los tres primeros componentes iguales
+(\(v_1=v_2=v_3=v\))
+y el cuarto diferente
+(\(v_4=v_x\neq v\))
+rompe la simetría de
+\(\mathrm{SU}(4)\)
+porque introduce una distinción explícita entre los estados de quark y leptón.
+Esta configuración rompe los generadores que mezclan los tres primeros componentes con el cuarto,
+dejando como subgrupo residual
+\(\mathrm{SU}(3)_C \times \mathrm{U}(1)_{B-L}\).
+</p>
+
+<p>
+Cuando el cuarto componente del VEV es distinto de cero, se puede generar un nuevo mínimo en el Potencial de Higgs que no respeta la simetría original del modelo Pati-Salam. Esto puede conducir a la ruptura de simetría que permite la generación de masas para partículas a través de mecanismos como Higgs, donde las excitaciones del Campo de Higgs están relacionadas con los Bosones de Nambu-Goldstone. En este sentido, la ruptura de simetría puede entenderse como un proceso que no solo afecta las interacciones electrodébiles, sino que también puede influir en la estructura de las interacciones de quarks y leptones, así como en la generación de nuevas partículas.
+</p>
 
     <figure class="figure-collapsible">
         <img src="Imagen1.png" alt="Valor esperado en vacío">
@@ -648,7 +966,7 @@ Las curvas para
 \(m_{ii}\)
 y
 \(m_{i4}\)
-se sobreponen debido a que la contribución adicional de
+se sobreponen  (Figura . . .) debido a que la contribución adicional de
 \(\lambda_{R3}\)
 al término
 \(m_2^2\)

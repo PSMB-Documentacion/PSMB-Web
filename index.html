@@ -399,51 +399,53 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-
         la capacidad analítica y la formación científica de los estudiantes de física contemporánea.
     </p>
 
-<hr>
+    <hr>
 
-<h2 id="seccion-PH">Potencial de Higgs (PH)</h2>
+    <h2 id="seccion-PH">Potencial de Higgs (PH)</h2>
 
 <p>
-La construcción del potencial de Higgs comienza identificando primero el grupo de simetría subyacente y luego
-seleccionando representaciones adecuadas para los campos de Higgs que romperán la simetría
-apropiadamente. En el contexto del modelo de Pati-Salam, los campos de Higgs se asignan típicamente a representaciones como
-\( (4, 2, 1) \) y \( (4, 1, 2) \), que son consistentes con la estructura del grupo de gauge
-\( SU(4)_C \times SU(2)_L \times SU(2)_R \). Estas representaciones se eligen para facilitar la ruptura de simetría paso a paso hasta el Modelo Estándar.
-El potencial de Higgs resultante describe las interacciones entre dos campos escalares, denotados
-\(L_i^\alpha\) y \(R_i^\alpha\), que corresponden a los sectores "izquierdo" (\(L\)) y "derecho" (\(R\))
-dentro del marco de simetría extendida del modelo.
+La construcción del potencial de Higgs comienza identificando
+primero el grupo de simetría subyacente y luego seleccionando
+representaciones adecuadas para los campos de Higgs que romperán
+la simetría apropiadamente. En el contexto del modelo de Pati-Salam,
+los campos de Higgs se asignan típicamente a representaciones como
+\((4, 2, 1)\) y \((4, 1, 2)\), que son consistentes con la estructura
+del grupo de gauge \(SU(4)_C \times SU(2)_L \times SU(2)_R\). Estas 
+representaciones se eligen para facilitar la ruptura de simetría paso
+a paso hasta el Modelo Estándar. El potencial de Higgs resultante 
+describe las interacciones entre dos campos escalares, denotados
+\(L_i^\alpha\) y \(R_i^\alpha\), que corresponden a los sectores
+"izquierdo" (\(L\)) y "derecho" (\(R\)) dentro del marco de simetría
+extendida del modelo.
 </p>
 
 <p>
-Estos campos desempeñan un papel central en la ruptura de la simetría y la generación de términos de masa para fermiones a través de
+Estos campos desempeñan un papel central en la ruptura de la simetría
+y la generación de términos de masa para fermiones a través de 
 Acoplamientos de Yukawa. El potencial considerado es:
 </p>
 
 <div class="math-display">
 \[
 \begin{aligned}
-V(L, R)=&
--2 \mu_{L}^{2} L_{i \alpha} L^{i \alpha}
--2 \mu_{R}^{2} R_{i \alpha} R^{i \alpha}
-\\
-&
-+\lambda_{L1}\left(L_{i \alpha} L^{i \alpha}\right)^2
-+\lambda_{R1}\left(R_{i \alpha} R^{i \alpha}\right)^2
-\\
-&
-+\lambda_{L2} L_{i \alpha} L^{j \alpha} L^{i \beta} L_{j \beta}
-+\lambda_{R2} R_{i \alpha} R^{j \alpha} R^{i \beta} R_{j \beta}
-\\
-&
-+\lambda_{LR1} L_{i \alpha} L^{i \alpha} R_{j \beta} R^{j \beta}
-+\lambda_{LR2} L_{i \alpha} R^{j \alpha} L^{i \beta} R_{j \beta}
-\\
-&
-+\lambda_{LR3}
+V(L,R)=&
+-2\mu_L^2L_{i\alpha}L^{i\alpha}
+-2\mu_R^2R_{i\alpha}R^{i\alpha}
+\\[4pt]
+&+\lambda_{L1}(L_{i\alpha}L^{i\alpha})^2
++\lambda_{R1}(R_{i\alpha}R^{i\alpha})^2
+\\[4pt]
+&+\lambda_{L2}L_{i\alpha}L^{j\alpha}L^{i\beta}L_{j\beta}
++\lambda_{R2}R_{i\alpha}R^{j\alpha}R^{i\beta}R_{j\beta}
+\\[4pt]
+&+\lambda_{LR1}L_{i\alpha}L^{i\alpha}R_{j\beta}R^{j\beta}
++\lambda_{LR2}L_{i\alpha}R^{j\alpha}L^{i\beta}R_{j\beta}
+\\[4pt]
+&+\lambda_{LR3}
 \left(
-L_{i \alpha} R^{j \alpha}
-L_{\beta}^{i}
-R_{j}^{\beta}
+L_{i\alpha}R^{j\alpha}
+L_\beta^{\,i}
+R_j^{\,\beta}
 +\mathrm{h.c.}
 \right)
 \end{aligned}
@@ -451,256 +453,207 @@ R_{j}^{\beta}
 </div>
 
 <p>
-Consideremos \(L\) y \(R\) como una 8-tupla, \(L^{i \alpha}\) y \(R^{i \alpha}\), con \(i=1,2\) y \(\alpha=1,2,3,4\) índices para
-\(SU(2)_R\) y \(SU(4)\), respectivamente. Worah introduce dos bosones de Higgs, los diestros, en la representación \((4,1,2)\):
+Consideremos \(L\) y \(R\) como una 8-tupla, \(L^{i\alpha}\) y 
+\(R^{i\alpha}\), con \(i=1,2\) y \(\alpha=1,2,3,4\) índices para 
+\(SU(2)_R\) y \(SU(4)\), respectivamente. Worah introduce dos bosones
+de Higgs, los diestros, en la representación \((4,1,2)\):
 </p>
 
 <div class="math-display">
 \[
-R^{i \alpha }=
-\begin{pmatrix}
-R_{11} & R_{12} \\
-R_{21} & R_{22} \\
-R_{31} & R_{32} \\
+R^{i\alpha}=
+\left(
+\begin{array}{cc}
+R_{11} & R_{12}\\
+R_{21} & R_{22}\\
+R_{31} & R_{32}\\
 R_{41} & R_{42}
-\end{pmatrix}
+\end{array}
+\right)
 \qquad
 \mathrm{con}
 \qquad
-R_{i \alpha}=\left(R^{i \alpha }\right)^*
+R_{i\alpha}
+=
+\left(R^{i\alpha}\right)^*
 \]
 </div>
 
 <p>
-Eso se utilizará para la ruptura de simetría del grupo de Pati-Salam al del Modelo Estándar:
+Eso se utilizará para la ruptura de simetría del grupo de Pati-Salam
+al del Modelo Estándar:
 </p>
 
 <div class="math-display">
 \[
-SU(4)\otimes SU(2)_L \otimes SU(2)_R
+SU(4)\otimes SU(2)_L\otimes SU(2)_R
 \rightarrow
-SU(3)_C \otimes SU(2)_L \otimes U(1)_Y
+SU(3)_C\otimes SU(2)_L\otimes U(1)_Y
 \]
 </div>
 
 <p>
-Y los bosones de Higgs zurdos
-\(L^{i \alpha } \sim(4,2,1)\),
-con
-\(L_{i \alpha }=\left(L^{i \alpha }\right)^{*}\),
-que será responsable de la ruptura de simetría del grupo electrodébil al electromagnetismo:
+Y los bosones de Higgs zurdos \(L^{i\alpha}\sim(4,2,1)\), con 
+\(L_{i\alpha}=(L^{i\alpha})^*\), que será responsable de la ruptura 
+de simetría del grupo electrodébil al electromagnetismo:
 </p>
 
 <div class="math-display">
 \[
-SU(3)_C \otimes SU(2)_L \otimes U(1)_Y
+SU(3)_C\otimes SU(2)_L\otimes U(1)_Y
 \rightarrow
-SU(3)_C \otimes U(1)_Q
+SU(3)_C\otimes U(1)_Q
 \]
 </div>
 
 <p>
-Suponemos que \(R\) se transforma en la representación fundamental de \(SU(4)\) y \(SU(2)_R\), pero trivialmente bajo
-\(SU(2)_L\) (es decir, está en la representación \((4,1,2)\)).
-Con esto queremos decir que
-
-\(R^{i \alpha} \mapsto M_{ij} N_{\alpha \beta} R^{j \beta}\),
-
-donde \(M\) y \(N\) son los elementos de \(SU(2)_R\) y \(SU(4)\), respectivamente.
-De manera similar, tomemos \(R_{i \alpha}\) como el conjugado transpuesto de \(R^{i \alpha}\).
-El potencial que corresponde a la ruptura de la primera simetría es:
+Suponemos que \(R\) se transforma en la representación fundamental de
+\(SU(4)\) y \(SU(2)_R\), pero trivialmente bajo \(SU(2)_L\) (es decir,
+está en la representación \((4,1,2)\). Con esto queremos decir que 
+\(R^{i\alpha}\mapsto M_{ij}N_{\alpha\beta}R^{j\beta}\), donde \(M,N\)
+son los elementos de \(SU(2)_R\) y \(SU(4)\), respectivamente). 
+De manera similar, tomemos \(R_{i\alpha}\) como el conjugado 
+transpuesto de \(R^{i\alpha}\). El potencial que corresponde a la 
+ruptura de la primera simetría es
 </p>
 
 <div class="math-display">
 \[
 \begin{aligned}
 V(R)=&
--2 \mu_{R}^{2} R_{i \alpha} R^{i \alpha}
-+\lambda_{R1}
-\left(
-R_{i \alpha} R^{i \alpha}
-\right)^2
-\\
-&
-+\lambda_{R2}
-R_{i \alpha}
-R^{j \alpha}
-R^{i \beta}
-R_{j \beta}
+-2\mu_R^2R_{i\alpha}R^{i\alpha}
++\lambda_{R1}(R_{i\alpha}R^{i\alpha})^2
+\\[4pt]
+&+\lambda_{R2}
+R_{i\alpha}R^{j\alpha}
+R^{i\beta}R_{j\beta}
 \end{aligned}
 \]
 </div>
 
 <p>
-Los campos de Higgs pueden expresarse en términos de matrices hermíticas debido a la generalización del mecanismo de Englert-Brout-Higgs para generar masas para bosones de gauge desde el caso familiar de teorías de campos cuánticos hermíticos a un marco más general de teorías de campos PT-simétricas.
-Por lo tanto, podemos escribir
-\(Y_{\alpha}^{\sigma}=R_{i \alpha}R^{i \sigma}\),
-como \(Y\) es hermitiana, es diagonalizable:
-
-\(Y_{\alpha}^{\sigma}=\delta_{\alpha}^{\sigma} v_{\sigma}\).
-
-Aquí,
-\(v_{\sigma}\)
-son los valores propios de la matriz
-\(Y\),
-y
-\(\delta_{\alpha}^{\sigma}\)
-es la delta de Kronecker, que es igual a 1 si
-\(\alpha=\sigma\)
-y 0 en otro caso.
-Y el potencial puede escribirse como:
+Los campos de Higgs pueden expresarse en términos de matrices 
+hermíticas debido a la generalización del mecanismo de 
+Englert-Brout-Higgs para generar masas para bosones de gauge desde el
+caso familiar de teorías de campos cuánticos hermíticos a un marco 
+más general de teorías de campos PT-simétricas. Por lo tanto, podemos
+escribir \(Y_{\alpha}^{\sigma}=R_{i\alpha}R^{i\sigma}\), como \(Y\) 
+es hermitiana, es diagonalizable: 
+\(Y_{\alpha}^{\sigma}=\delta_{\alpha}^{\sigma}v_{\sigma}\); aquí, 
+\(v_{\sigma}\) son los valores propios de la matriz \(Y\), y 
+\(\delta_{\alpha}^{\sigma}\) es la delta de Kronecker, que es igual a
+1 si \(\alpha=\sigma\) y 0 en otro caso. Y se puede escribir como
 </p>
 
 <div class="math-display">
 \[
 V(Y)=
--2 \mu_{R}^{2} Y_{\alpha}^{\alpha}
-+\lambda_{R1}
-\left(
-Y_{\alpha}^{\alpha}
-\right)^2
-+\lambda_{R2}
-Y_{\alpha}^{\beta}
-Y_{\beta}^{\alpha}
+-2\mu_R^2Y_\alpha^\alpha
++\lambda_{R1}(Y_\alpha^\alpha)^2
++\lambda_{R2}Y_\alpha^\beta Y_\beta^\alpha
 \]
 </div>
 
 <p>
-o equivalentemente:
+o equivalentemente
 </p>
 
 <div class="math-display">
 \[
 V(v_\alpha)=
--2 \mu_{R}^{2}
-\sum_{\alpha} v_{\alpha}
+-2\mu_R^2\sum_\alpha v_\alpha
 +\lambda_{R1}
 \left(
-\sum_{\alpha} v_{\alpha}
+\sum_\alpha v_\alpha
 \right)^2
 +\lambda_{R2}
-\sum_{\alpha} v_{\alpha}^{2}
-\]
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <p><strong>Párrafo 1:</strong> Explica la versión actual del módulo.</p>
-
-    <figure class="figure-collapsible">
-         <img src="Imagen1.png" alt="Potencial de Higgs">
-         <figcaption>Figura 2: Potencial de Higgs.</figcaption>
-    </figure>
-
-    <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el módulo.</p>
-
-    <figure class="figure-collapsible">
-         <img src="Imagen1.png" alt="Potencial escalar">
-         <figcaption>Figura 3: Estructura del potencial escalar.</figcaption>
-    </figure>
-
-<hr>
-
-<h2 id="seccion-PHM">Potencial de Higgs modificado</h2>
-
-<p>
-Para determinar el VEV, resolvemos la condición de extremo
-\(\partial V /\partial t=0\),
-lo que da como resultado:
-</p>
-
-<div class="math-display">
-\[
--\mu_{R}^{2}
-+
-\lambda_{R1}
-\sum_{\alpha} v_{\alpha}
-+
-\lambda_{R2} v_{\alpha}
-=
-0
+\sum_\alpha v_\alpha^2
 \]
 </div>
 
 <p>
-Este sistema de ecuaciones debe resolverse para obtener los valores de
-\(v_{\alpha}\)
-en función de
-\(\mu_{R}\),
-\(\lambda_{R1}\)
-y
-\(\lambda_{R2}\),
-esto dará como resultado el VEV en función de estos parámetros:
+Para determinar el VEV, resolvemos la condición de extremo 
+\(\partial V/\partial t=0\), lo que da como resultado:
 </p>
 
 <div class="math-display">
 \[
-v_1=v_2=v_3=v_4=
+-\mu_R^2
++\lambda_{R1}\sum_\alpha v_\alpha
++\lambda_{R2}v_\alpha
+=0
+\]
+</div>
+
+<p>
+Este sistema de ecuaciones debe resolverse para obtener los valores 
+de \(v_\alpha\) en función de \(\mu_R\), \(\lambda_{R1}\) y 
+\(\lambda_{R2}\), esto dará como resultado el VEV en función de estos
+parámetros:
+</p>
+
+<div class="math-display">
+\[
+v=v_1=v_2=v_3=v_4=
 \frac{\mu_R^2}
 {4\lambda_{R1}+\lambda_{R2}}
 \]
 </div>
 
 <p>
-Todas las entradas al VEV son iguales, lo que sugiere que el sistema podría estar en un estado simétrico, ya que no se favorece ninguna dirección en particular en el espacio de parámetros del campo, y por lo tanto no habría ruptura espontánea de simetría. En el contexto de modelos más allá del Modelo Estándar, decidir si existe RES cuando el VEV tiene todas sus entradas iguales es complejo, y requiere un análisis de la estructura del potencial y las simetrías involucradas. La modificación del Potencial de Higgs en modelos más allá del Modelo Estándar es un enfoque viable y comúnmente utilizado para inducir la ruptura de simetría e interacciones del modelo. Esta modificación puede conducir a nuevas dinámicas y a la aparición de fenómenos físicos.
+En este caso se reduce a:
 </p>
 
 <div class="math-display">
 \[
-V=V_{SG}+V_C
+V_{SG}(v)=
+-8\mu_R^2v
++
+4\left(
+4\lambda_{R1}
++\lambda_{R2}
+\right)v^2
 \]
 </div>
-
-<p>
-Aquí,
-\(V_{SG}\)
-representa el potencial que se origina en el grupo de simetría del modelo propuesto, en este caso el modelo de Pati-Salam; y
-\(V_C\)
-es el potencial de control que proponemos para inducir la ruptura de simetría.
-</p>
-
-
 
 
     <hr>
 
+    <h2 id="seccion-PHM">Potencial de Higgs modificado</h2>
 
-    <h2 id="seccion-PHM">Potencial de Higgs modificado (PHM)</h2>
+<p>
+Todas las entradas al VEV son iguales, lo que sugiere que el sistema
+podría estar en un estado simétrico, ya que no se favorece ninguna 
+dirección en particular en el espacio de parámetros del campo, y por
+lo tanto no habría ruptura espontánea de simetría. En el contexto de
+modelos más allá del Modelo Estándar, decidir si existe RES cuando el
+VEV tiene todas sus entradas iguales es complejo, y requiere un 
+análisis de la estructura del potencial y las simetrías involucradas.
+La modificación del Potencial de Higgs en modelos más allá del 
+Modelo Estándar es un enfoque viable y comúnmente utilizado para 
+inducir la ruptura de simetría e interacciones del modelo. 
+Esta modificación puede conducir a nuevas dinámicas y a la aparición
+de fenómenos físicos.
+</p>
 
-    <p><strong>Párrafo 1:</strong> Explica la versión actual del módulo.</p>
+<div class="math-display">
+\[
+V = V_{SG} + V_c
+\]
+</div>
 
-    <figure class="figure-collapsible">
-         <img src="Imagen1.png" alt="Potencial de Higgs">
-         <figcaption>Figura 4: Potencial de Higgs.</figcaption>
-    </figure>
+<p>
+Aquí, \(V_{SG}\) representa el potencial que se origina en el grupo 
+de simetría del modelo propuesto, en este caso el modelo de 
+Pati-Salam; y \(V_C\) es el potencial de control que proponemos para
+inducir la ruptura de simetría. Para \(V(v_\alpha)\) proponemos un 
+término cuadrático \((\lambda_3 v_4^2)\) como potencial de control 
+para el potencial de Higgs, lo que lleva a la ruptura de la simetría.
+</p>
 
-    <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el módulo.</p>
+    <hr>
 
-    <figure class="figure-collapsible">
-         <img src="Imagen1.png" alt="Potencial escalar">
-         <figcaption>Figura 5: Estructura del potencial escalar.</figcaption>
-    </figure>
-
-<hr>
-
-<h2 id="seccion-VEV">Valor Esperado de Vacío (VEV)</h2>
+    <h2 id="seccion-VEV">Valor Esperado de Vacío (VEV)</h2>
 
 <p>
 Con el Potencial de Higgs modificado, obtenemos:
@@ -710,12 +663,9 @@ Con el Potencial de Higgs modificado, obtenemos:
 \[
 v=v_1=v_2=v_3=
 \frac{\mu_R^2}
-{
-3\lambda_{R1}
-+\lambda_{R2}
+{3\lambda_{R1}+\lambda_{R2}
 +\frac{\lambda_{R1}\lambda_{R2}}
-{\lambda_{R1}+\lambda_{R3}}
-}
+{\lambda_{R1}+\lambda_{R3}}}
 \]
 </div>
 
@@ -730,301 +680,387 @@ v_x=v_4=
 {\lambda_{R2}+\lambda_{R3}}
 \,
 \frac{\mu_R^2}
-{
-3\lambda_{R1}
-+\lambda_{R2}
+{3\lambda_{R1}+\lambda_{R2}
 +\frac{\lambda_{R1}\lambda_{R2}}
-{\lambda_{R1}+\lambda_{R3}}
-}
+{\lambda_{R1}+\lambda_{R3}}}
 \]
 </div>
 
 <p>
-Un VEV con los tres primeros componentes iguales
-(\(v_1=v_2=v_3=v\))
-y el cuarto diferente
-(\(v_4=v_x\neq v\))
-rompe la simetría de
-\(\mathrm{SU}(4)\)
-porque introduce una distinción explícita entre los estados de quark y leptón.
-Esta configuración rompe los generadores que mezclan los tres primeros componentes con el cuarto,
-dejando como subgrupo residual
+Un VEV con los tres primeros componentes iguales (\(v_1=v_2=v_3=v\))
+y el cuarto diferente (\(v_4=v_x\neq v\)) rompe la simetría de 
+\(\mathrm{SU}(4)\) porque introduce una distinción explícita entre 
+los estados de quark y leptón. Esta configuración rompe los 
+generadores que mezclan los tres primeros componentes con el cuarto,
+dejando como subgrupo residual 
 \(\mathrm{SU}(3)_C \times \mathrm{U}(1)_{B-L}\).
 </p>
 
 <p>
-Cuando el cuarto componente del VEV es distinto de cero, se puede generar un nuevo mínimo en el Potencial de Higgs que no respeta la simetría original del modelo Pati-Salam. Esto puede conducir a la ruptura de simetría que permite la generación de masas para partículas a través de mecanismos como Higgs, donde las excitaciones del Campo de Higgs están relacionadas con los Bosones de Nambu-Goldstone. En este sentido, la ruptura de simetría puede entenderse como un proceso que no solo afecta las interacciones electrodébiles, sino que también puede influir en la estructura de las interacciones de quarks y leptones, así como en la generación de nuevas partículas.
+Cuando el cuarto componente del VEV es distinto de cero, se puede 
+generar un nuevo mínimo en el Potencial de Higgs que no respeta la 
+simetría original del modelo Pati-Salam. Esto puede conducir a la 
+ruptura de simetría que permite la generación de masas para 
+partículas a través de mecanismos como Higgs, donde las excitaciones
+del Campo de Higgs están relacionadas con los Bosones de 
+Nambu-Goldstone. En este sentido, la ruptura de simetría puede 
+entenderse como un proceso que no solo afecta las interacciones 
+electrodébiles, sino que también puede influir en la estructura de 
+las interacciones de quarks y leptones, así como en la generación 
+de nuevas partículas.
 </p>
-
-    <figure class="figure-collapsible">
-        <img src="Imagen1.png" alt="Valor esperado en vacío">
-        <figcaption>Figura 6: Valor esperado en vacío.</figcaption>
-    </figure>
-
-    <p><strong>Párrafo 2:</strong> Detalla los pasos para probar el módulo.</p>
-
-    <figure class="figure-collapsible">
-        <img src="Imagen2.png" alt="Valor esperado en vacío">
-        <figcaption>Figura 7: Valor esperado en vacío.</figcaption>
-    </figure>
 
     <hr>
 
     <h2 id="seccion-ML">Masa de leptoquarks (ML)</h2>
 
-    <p><strong>Párrafo 1:</strong> Señala dónde se encuentra el módulo.</p>
-
-    <figure class="figure-collapsible">
-        <img src="Imagen3.png" alt="Masa de leptoquarks">
-        <figcaption>Figura 8: Masa de leptoquarks.</figcaption>
-    </figure>
-
-    <figure class="figure-collapsible">
-        <img src="Imagen4.png" alt="Masa de leptoquarks">
-        <figcaption>Figura 9: Masa de leptoquarks.</figcaption>
-    </figure>
-
     <hr>
 
     <h2 id="seccion-ERS">Escala de ruptura de simetría (ERS)</h2>
 
-    <figure class="figure-collapsible">
-        <img src="Imagen5.png" alt="Escala de ruptura de simetría">
-        <figcaption>Figura 10: Escala de ruptura de simetría.</figcaption>
-    </figure>
+<p>
+En modelos que amplían el Modelo Estándar mediante la simetría 
+Pati-Salam (\(SU(2)_L \times SU(2)_R \times SU(4)_C\)) o cadenas de 
+ruptura que la incluyen (p. ej., PS → LR → SM), la "escala de 
+ruptura" se refiere a la energía a la que una etapa de la secuencia 
+de desdoblamiento de la simetría se rompe espontáneamente mediante 
+VEV de campos Higgs apropiados o por mecanismos análogos. Esta 
+escala marca el inicio de una nueva estructura gauge y, por tanto, 
+la transición entre regímenes de simetría. En términos operativos, 
+se asocia a la escala de VEV de los campos que realizan la ruptura 
+(por ejemplo, campos que rompen PS a LR o LR a SM) y a la energía 
+en la que aparecen o desaparecen mediadores gauge correspondientes. 
+Este concepto aparece de forma explícita en discusiones sobre 
+descomposición de PS hacia LR y luego hacia SM, donde la escala de 
+ruptura del PS y las escalas intermedias determinan cuándo se 
+aplica cada teoría. En este sentido, la escala de ruptura es 
+intrínsecamente dependiente del escenario de ruptura elegido y de 
+la estructura del UV completion (GUT/NCG, etc.).
+</p>
 
-    <figure class="figure-collapsible">
-        <img src="Imagen6.png" alt="Escala de ruptura de simetría">
-        <figcaption>Figura 11: Escala de ruptura de simetría.</figcaption>
-    </figure>
+<p>
+En el modelo de Pati-Salam, es la energía en la que se rompe 
+\(SU(2)_L \times SU(2)_R \times SU(4)_C\) a un subgrupo que avanza 
+hacia el LR o directamente hacia el SM, dependiendo de la ruta de 
+ruptura considerada. En muchos escenarios, \(M_{PS}\) se sitúa 
+entre \(10^5\) y \(10^{16}\) GeV, según la literatura de GUT con 
+PS intermedio y el contenido de Higgs elegido; en modelos con PS 
+como etapa intermedia, \(M_{PS}\) típicamente fija la base para la 
+unificación de couplings y para la aparición de nuevos bosones 
+gauge y scalars característicos de PS. Esta escala se determina 
+mediante análisis de RGEs y las condiciones de unificación, y puede 
+acotarse por límites fenomenológicos (protones, leptogénesis, etc.) 
+en ciertas construcciones, o por la necesidad de que aparezcan 
+señales a escalas accesibles (p. ej., LR a TeV) en otros escenarios.
+</p>
 
     <hr>
 
     <h2 id="seccion-MN">Masa de neutrinos (MN)</h2>
 
-    <figure class="figure-collapsible">
-        <img src="Imagen7.png" alt="Masa de neutrinos">
-        <figcaption>Figura 12: Masa de neutrinos.</figcaption>
-    </figure>
+    <hr>
 
-<hr>
-
-<h2 id="seccion-MBE">Masa de bosones escalares (MBE)</h2>
+    <h2 id="seccion-MBE">Masa de bosones escalares (MBE)</h2>
 
 <p>
-En modelos más allá del Modelo Estándar, como los modelos de dos dobletes de Higgs,
-también se incluyen términos cuadráticos que afectan la masa de nuevos bosones de Higgs
-y posibles fermiones. Por otro lado, los términos de interacción describen cómo el campo
-de Higgs interactúa con otros campos, como los fermiones y los bosones gauge.
-Estos términos son esenciales para la generación de masas de partículas mediante
-la ruptura de simetría. En el caso de modelos como Pati-Salam o los modelos de Higgs compuesto,
-los términos de interacción pueden ser más complejos e incluir múltiples campos de Higgs,
-resultando en un potencial más rico y la posibilidad de nuevas interacciones.
-</p>
-
-<p>
-En nuestro modelo, los términos cuadráticos, cruciales para determinar las masas
-y mezclas de las fluctuaciones, son:
+Expandiendo el potencial de Higgs alrededor del VEV se introducen 
+nuevos términos en la lagrangiana, lo cual facilita la mezcla de 
+campos escalares. Esto es relevante en modelos que predicen la 
+existencia de leptones vectoriales adicionales o bosones gauge, los 
+cuales podrían detectarse a través de sus interacciones con el 
+Higgs. El potencial a expandir es el potencial de Pati-Salam más el 
+potencial de control, ambos en la representación del campo de Higgs:
 </p>
 
 <div class="math-display">
-
 \[
-\begin{array}{rcl}
-
-V_{\text{quadratic}}
-& = &
--2 \mu_R^2 \delta R_{i \alpha}\delta R^{i \alpha}
-+ 4 \lambda_{R1}
-R_{i \alpha}^{(0)}
-R^{(0)i \alpha}
-\delta R_{i \alpha}
-\delta R^{i \alpha}
-
-\\[6pt]
-
-&
-&
-+ 4 \lambda_{R2}
-R_{j \beta}^{(0)}
-R^{(0)j \alpha}
-\delta R_{i \alpha}
-\delta R^{i \alpha}
-
-+ \lambda_{R3}
-\delta R_{i4}
-\delta R^{i4}
-
-\end{array}
+\begin{aligned}
+V(R)=&-2\mu_R^{2}R_{i\alpha}R^{i\alpha}
++\lambda_{R1}\left(R_{i\alpha}R^{i\alpha}\right)^2\\
+&+\lambda_{R2}R_{i\alpha}R^{j\alpha}R^{i\beta}R_{j\beta}
++\lambda_{R3}R_{i4}R^{i4}
+\end{aligned}
 \]
-
 </div>
 
 <p>
-El primer término
-\(-2 \mu_R^2 \delta R_{i \alpha}\delta R^{i \alpha}\)
-tiene una masa efectiva dada por
-\(-2 \mu_R^2\).
-Este término da una contribución uniforme a las masas
-de todos los componentes de las fluctuaciones
-\(\delta R_{i \alpha}\).
-</p>
-
-<p>
-El segundo término
-\(4 \lambda_{R1} R_{i \alpha}^{(0)} R^{(0)i \alpha}
-\delta R_{i \alpha}\delta R^{i \alpha}\)
-describe cómo el VEV del campo de Higgs
-\(R_{i \alpha}^{(0)}\)
-afecta las masas cuadradas de las fluctuaciones
-\(\delta R_{i \alpha}\).
-</p>
-
-<p>
-El tercer término
-\(4 \lambda_{R2} R_{j \beta}^{(0)} R^{(0)j \alpha}
-\delta R_{i \alpha}\delta R^{i \alpha}\)
-también depende del VEV
-\(R_{j \beta}^{(0)}R^{(0)j \alpha}\),
-pero tiene una estructura más específica.
-Los índices
-\((j,\beta)\)
-y
-\((j,\alpha)\)
-están relacionados, lo que introduce un acoplamiento cruzado
-entre diferentes componentes de las fluctuaciones;
-describe cómo la mezcla entre los componentes del VEV
-afecta a las masas cuadráticas.
-</p>
-
-<p>
-El cuarto término
-\(\lambda_{R3}\delta R_{i4}\delta R^{i4}\)
-es específico para las fluctuaciones
-\(\delta R_{i4}\),
-es decir, aquellos componentes donde el índice
-\(\alpha = 4\),
-representa un término de masa específico para los componentes
-\(\delta R_{i4}\),
-independiente de otras fluctuaciones.
-Este término introduce una masa efectiva específica
-para las fluctuaciones
-\(\delta R_{i4}\),
-modulada únicamente por el acoplamiento
-\(\lambda_{R3}\).
-</p>
-
-<p>
-Para determinar
-\(M_{i\alpha, j\beta}\),
-derivamos dos veces
-\(V\)
-con respecto a
-\(\delta R_{i \alpha}\)
-y
-\(\delta R_{j\beta}\):
+Para expandir el potencial \(V(R)\) alrededor del VEV 
+\(R_{i\alpha}^{(0)}\) más una perturbación \(\delta R_{i\alpha}\), 
+descomponemos \(R_{i\alpha}\) como sigue:
 </p>
 
 <div class="math-display">
-
 \[
-M_{i\alpha, j\beta} =
-\frac{\partial^2 V}
-{\partial (\delta R_{i\alpha})
-\partial (\delta R_{j\beta})}
-\Big|_{\text{VEV}}
+R_{i\alpha}=R_{i\alpha}^{(0)}+\delta R_{i\alpha}
 \]
-
 </div>
 
 <p>
-Con el VEV diagonal
-\((v, v, v, v_x)\),
-el término de masa es:
+donde \(R_{i\alpha}^{(0)}\) es el VEV del campo \(R_{i\alpha}\), y 
+\(\delta R_{i\alpha}\) representa las fluctuaciones alrededor del 
+VEV. La expansión hasta términos cuadráticos es:
 </p>
 
 <div class="math-display">
+\[
+\begin{aligned}
+V=&-2\mu_R^2R_{i\alpha}^{(0)}R^{i\alpha(0)}
+-4\mu_R^2R_{i\alpha}^{(0)}\delta R^{i\alpha}
+-2\mu_R^2\delta R_{i\alpha}\delta R^{i\alpha}\\
+&+\lambda_{R1}\Big[
+\left(R_{i\alpha}^{(0)}R^{i\alpha(0)}\right)^2
++4R_{i\alpha}^{(0)}R^{i\alpha(0)}
+\delta R_{i\alpha}\delta R^{i\alpha}
+\Big]\\
+&+\lambda_{R2}\Big[
+R_{i\alpha}^{(0)}R^{j\alpha(0)}
+R^{i\beta(0)}R_{j\beta}^{(0)}
++4R_{i\alpha}^{(0)}R^{j\alpha(0)}
+\delta R^{i\beta}\delta R_{j\beta}
+\Big]\\
+&+\lambda_{R3}\Big[
+R_{i4}^{(0)}R^{i4(0)}
++2R_{i4}^{(0)}\delta R^{i4}
++\delta R_{i4}\delta R^{i4}
+\Big]
+\end{aligned}
+\]
+</div>
 
+<p>
+En modelos más allá del Modelo Estándar, pueden identificarse dos 
+tipos de términos de masa en el potencial de Higgs perturbado: 
+términos cuadráticos y términos de interacción. Estos términos son 
+fundamentales para entender cómo se generan las masas de las 
+partículas en estos modelos extendidos. Los términos cuadráticos en 
+el potencial de Higgs son aquellos que se relacionan directamente 
+con la masa del bosón de Higgs. En el contexto del Modelo Estándar, 
+el término cuadrático es crucial para la estabilidad del potencial 
+y para la formación de un mínimo en él, lo cual permite que el 
+campo de Higgs adquiera un VEV distinto de cero. Este VEV 
+proporciona masa a las partículas mediante el mecanismo de Higgs.
+</p>
+
+<p>
+En modelos más allá del Modelo Estándar, como los modelos de dos 
+dobletes de Higgs, también se incluyen términos cuadráticos que 
+afectan la masa de nuevos bosones de Higgs y posibles fermiones. 
+Por otro lado, los términos de interacción describen cómo el campo 
+de Higgs interactúa con otros campos, como los fermiones y los 
+bosones gauge. Estos términos son esenciales para la generación de 
+masas de partículas mediante la ruptura de simetría. En el caso de 
+modelos como Pati-Salam o los modelos de Higgs compuesto, los 
+términos de interacción pueden ser más complejos e incluir 
+múltiples campos de Higgs, resultando en un potencial más rico y la 
+posibilidad de nuevas interacciones.
+</p>
+
+<p>
+En nuestro modelo, los términos cuadráticos, cruciales para 
+determinar las masas y mezclas de las fluctuaciones, son:
+</p>
+
+<div class="math-display">
+\[
+\begin{aligned}
+V_{\text{quadratic}}=&
+-2\mu_R^2\delta R_{i\alpha}\delta R^{i\alpha}
++4\lambda_{R1}
+R_{i\alpha}^{(0)}R^{(0)i\alpha}
+\delta R_{i\alpha}\delta R^{i\alpha}\\
+&+4\lambda_{R2}
+R_{j\beta}^{(0)}R^{(0)j\alpha}
+\delta R_{i\alpha}\delta R^{i\alpha}
++\lambda_{R3}\delta R_{i4}\delta R^{i4}
+\end{aligned}
+\]
+</div>
+
+<p>
+El primer término \(-2\mu_R^2\delta R_{i\alpha}\delta R^{i\alpha}\),
+tiene una masa efectiva dada por \(-2\mu_R^2\), este término da una 
+contribución uniforme a las masas de todos los componentes de las 
+fluctuaciones \(\delta R_{i\alpha}\). El segundo término 
+\(4\lambda_{R1}R_{i\alpha}^{(0)}R^{(0)i\alpha}\delta R_{i\alpha}\delta R^{i\alpha}\) 
+describe cómo el VEV del campo de Higgs \(R_{i\alpha}^{(0)}\) 
+afecta las masas cuadradas de las fluctuaciones 
+\(\delta R_{i\alpha}\). El tercer término 
+\(4\lambda_{R2}R_{j\beta}^{(0)}R^{(0)j\alpha}\delta R_{i\alpha}\delta R^{i\alpha}\) 
+también depende del VEV \(R_{j\beta}^{(0)}R^{(0)j\alpha}\), pero 
+tiene una estructura más específica. Los índices \((j,\beta)\) y 
+\((j,\alpha)\) están relacionados, lo que introduce un acoplamiento 
+cruzado entre diferentes componentes de las fluctuaciones; describe 
+cómo la mezcla entre los componentes del VEV afecta a las masas 
+cuadráticas. El cuarto término 
+\(\lambda_{R3}\delta R_{i4}\delta R^{i4}\) es específico para las 
+fluctuaciones \(\delta R_{i4}\), es decir, aquellos componentes 
+donde el índice \(\alpha=4\), representa un término de masa 
+específico para los componentes \(\delta R_{i4}\), independiente de 
+otras fluctuaciones. Este término introduce una masa efectiva 
+específica para las fluctuaciones \(\delta R_{i4}\), modulada 
+únicamente por el acoplamiento \(\lambda_{R3}\).
+</p>
+
+<p>
+Para determinar \(M_{i\alpha,j\beta}\), derivamos dos veces \(V\) 
+con respecto a \(\delta R_{i\alpha}\) y \(\delta R_{j\beta}\):
+</p>
+
+<div class="math-display">
+\[
+M_{i\alpha,j\beta}
+=
+\frac{\partial^2V}
+{\partial(\delta R_{i\alpha})
+\partial(\delta R_{j\beta})}
+\Bigg|_{\mathrm{VEV}}
+\]
+</div>
+
+<p>
+Con el VEV diagonal \((v,v,v,v_x)\), el término de masa es:
+</p>
+
+<div class="math-display">
 \[
 m_{ii}
 =
--2 \mu_R^2
+-2\mu_R^2
 +
 4(\lambda_{R1}+\lambda_{R2})
-(3v^2 + v_x^2)
+(3v^2+v_x^2)
 +
 \lambda_{R3}\delta_{i4}
 \]
-
 </div>
 
 <p>
-Las curvas para
-\(m_{ii}\)
-y
-\(m_{i4}\)
-se sobreponen  (Figura . . .) debido a que la contribución adicional de
-\(\lambda_{R3}\)
-al término
-\(m_2^2\)
-es pequeña comparada con los términos dominantes.
-Esto coloca a
-\(m_{ii} \approx m_{i4}\)
-en la escala de valores considerada.
+Las curvas para \(m_{ii}\) y \(m_{i4}\) se sobreponen 
+(Figura \ref{fig:enter-label}) debido a que la contribución 
+adicional de \(\lambda_{R3}\) al término \(m_2^2\) es pequeña 
+comparada con los términos dominantes. Esto coloca a 
+\(m_{ii}\approx m_{i4}\) en la escala de valores considerada. El 
+término añadido al potencial para provocar la ruptura espontánea de 
+simetría no da lugar a una nueva masa. La masa de Higgs 
+\(m_{ii}\) para el valor estable de \(\lambda_{R3}=2.0\) es de 69.56 TeV.
 </p>
-
-<p>
-El término añadido al potencial para provocar la ruptura espontánea
-de simetría no da lugar a una nueva masa.
-
-La masa de Higgs
-\(m_{ii}\)
-para el valor estable de
-\(\lambda_{R3}=2.0\)
-es de
-\(69.56\ \text{TeV}\).
-</p>
-
-
-
-    <figure class="figure-collapsible">
-       <img src="Imagen12.png" alt="Masa de bosones escalares">
-       <figcaption>Figura 13: Masa de bosones escalares.</figcaption>
-    </figure>
-
-    <p>
-       <strong>Párrafo 2:</strong>
-       Describe el análisis físico y las opciones de simulación disponibles.
-    </p>
-
-    <figure class="figure-collapsible">
-        <img src="Imagen13.png" alt="Masa de bosones escalares">
-        <figcaption>Figura 14: Masa de bosones escalares.</figcaption>
-    </figure>
 
     <hr>
 
     <h2 id="seccion-MBV">Masa de bosones vectoriales (MBV)</h2>
 
-    <figure class="figure-collapsible">
-        <img src="Imagen8.png" alt="Masa de bosones vectoriales">
-        <figcaption>Figura 15: Masa de bosones vectoriales.</figcaption>
-    </figure>
+<p>
+Los bosones de Nambu-Goldstone son excitaciones sin masa que surgen 
+de la ruptura espontánea de simetrías continuas globales en teorías 
+cuánticas de campos. Este fenómeno fue formalizado por primera vez 
+en 1962 por Goldstone, Salam y Weinberg, quienes demostraron que por
+cada generador de simetría roto debe existir un bosón de 
+Nambu-Goldstone masivo. La matriz de masas se establece mediante la 
+forma de la lagrangiana después de la ruptura espontánea de simetría.
+La matriz de masas se obtiene a partir de los términos cuadráticos 
+en la lagrangiana, los cuales resultan de expandir el potencial de 
+Higgs y los términos cinéticos alrededor del VEV. En el caso de 
+múltiples campos de Higgs, la matriz de masas puede ser una matriz 
+\(n \times n\) que puede diagonalizarse para obtener las masas 
+físicas de los bosones de Higgs. El término cinético del campo de 
+Higgs es:
+</p>
 
-    <figure class="figure-collapsible">
-        <img src="Imagen9.png" alt="Masa de bosones vectoriales">
-        <figcaption>Figura 16: Masa de bosones vectoriales.</figcaption>
-    </figure>
+<div class="math-display">
+\[
+\mathcal{L}_{\text{kinetic}}
+=
+\text{Tr}
+\left[
+(D_\mu R)^\dagger
+(D^\mu R)
+\right]
+\]
+</div>
 
-    <figure class="figure-collapsible">
-        <img src="Imagen10.png" alt="Masa de bosones vectoriales">
-        <figcaption>Figura 17: Masa de bosones vectoriales.</figcaption>
-    </figure>
+<p>
+donde el derivado covariante es:
+</p>
 
-    <figure class="figure-collapsible">
-        <img src="Imagen11.png" alt="Masa de bosones vectoriales">
-        <figcaption>Figura 18: Masa de bosones vectoriales.</figcaption>
-    </figure>
+<div class="math-display">
+\[
+D_\mu R
+=
+\partial_\mu R
+-
+i g_A A_\mu^A T^A R
+\]
+</div>
+
+<p>
+Sustituyendo el VEV \(R_0\) y expandiendo, el término relevante 
+para las masas de los bosones gauge es:
+</p>
+
+<div class="math-display">
+\[
+\mathcal{L}_{\text{mass}}
+=
+g_A^2 \,
+\text{Tr}
+\left[
+(T^A R_0)^\dagger
+(T^B R_0)
+\right]
+A_\mu^A
+A^{\mu,B}
+\]
+</div>
+
+<p>
+La matriz de masas \(M_{AB}\) se define como:
+</p>
+
+<div class="math-display">
+\[
+M_{AB}
+=
+g_A^2 \,
+\text{Tr}
+\left[
+(T^A R_0)^\dagger
+(T^B R_0)
+\right]
+\]
+</div>
+
+<p>
+El VEV del campo de Higgs \(R_0\) es:
+</p>
+
+<div class="math-display">
+\[
+R_0
+=
+\text{diag}
+(v,\,v,\,v,\,v_x)
+\]
+</div>
+
+<p>
+Este VEV preserva la simetría \(SU(3)_C \times U(1)_{B-L}\), pero 
+rompe \(SU(4)\rightarrow SU(3)_C \times U(1)_{B-L}\). Los 
+generadores de \(SU(4)\) interactúan de manera distinta con los 
+componentes del VEV, lo cual determina las masas de los bosones 
+gauge. Los \(15\) generadores de \(SU(4)\) (Anexo 1) pueden 
+clasificarse como: 
+\(8\) generadores de \(SU(3)_C\) (\(T^a, a = 1,\dots,8\)); \(1\) 
+generador asociado con el \(U(1)_{B-L}\) (\(T^{15}\)); y \(6\) 
+generadores que conectan \(SU(3)_C\) con la dirección \(v_x\).
+</p>
+
+
+
+
+
+
+
+
 
 </div>
 
